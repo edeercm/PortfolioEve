@@ -1,0 +1,51 @@
+@import 'normalize.css';
+
+@import url('https://fonts.cdnfonts.com/css/fahkwang');
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+:root {
+    --fahkwang: 'Fahkwang', sans-serif;  
+    --gilroy-regular: 'Gilroy-Regular', sans-serif;
+    --gilroy-medium: 'Gilroy-Medium', sans-serif;
+
+    --principal-color: #E9E5DE;
+    --secondary-color: #865241;
+    --tertiary-color: #DFD3CE;
+    --quaternary-color: #4B4B4B;
+    --quinary-color:  #DDD3CB;
+          
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+
+    font-family: 'Fahkwang', sans-serif;                                      
+}
+
+h2, h5, h6, span, a {
+
+    font-family: 'Gilroy-Medium', sans-serif;                                   
+}
+
+h3, h4 {
+
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+

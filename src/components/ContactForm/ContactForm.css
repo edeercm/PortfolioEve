@@ -1,0 +1,100 @@
+.form-control {
+    margin: 0 0 1rem 3rem;
+    /* margin-left: 3rem;
+    margin-bottom: 1rem; */
+    border-radius: 0;
+    border-color: transparent;
+    /* border-bottom-color: #865241; */
+    border-bottom: 0.175rem solid #865241;
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    color: #865241;
+    font-size: 1.125rem;
+    font-family: 'Gilroy-Medium', sans-serif;   
+  }
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+    border-bottom-color: #865241;
+    background-color: transparent;
+}
+
+.form-control.is-invalid {
+    border-color: transparent;
+    border-bottom-color: red;
+}
+
+.form-control.is-invalid:focus {
+    box-shadow: none;
+    border-color: transparent;
+    border-bottom-color: red;
+}
+
+.text-area {
+    resize: none;
+}
+
+.contact-btn {
+    margin: 1rem 0 0 3rem;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.175rem;
+    color: #E9E5DE;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    background-color: #865241;
+    transition: all 0.3s ease-in; /* Transición suave */
+}
+
+.contact-btn:hover {
+    color: #865241;
+    background-color: #E9E5DE;
+    transition: all 0.3s ease-out; /* Transición suave */
+}
+
+
+.contact-btn-disabled {
+    cursor: not-allowed;
+}
+
+.modal-content {
+    background-color: #E9E5DE;
+}
+
+.modal-btn {
+    margin: 1rem 0 0 3rem;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.175rem;
+    color: #E9E5DE;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    background-color: #865241;
+    transition: all 0.3s ease-in; /* Transición suave */
+}
+/* 
+.modal-btn:hover {
+    color: #E9E5DE;
+    background-color: #865241;
+    transition: all 0.3s ease-out;
+} */
+
+
+
+
+
+
+
