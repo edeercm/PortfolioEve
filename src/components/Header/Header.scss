@@ -133,6 +133,10 @@ header {
         transition-delay: 0.1s * ($i - 1);
       }
     }
+
+    @media (max-width: 575.97px) {
+      width: 65%;
+    }
   }
 
   &:hover {
