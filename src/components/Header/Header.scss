@@ -27,9 +27,15 @@ header {
 
       span {
         font-size: 5rem;
+        color: var(--tertiary-color);
+        transition: color 0.3s ease-in;
 
         &:hover {
-          color: rgb(76, 76, 216);
+          color: #F4F2EF;
+        }
+
+        @media (max-width: 575.97px) {
+          font-size: 3.75rem;
         }
       }
 
@@ -163,7 +169,7 @@ header {
   justify-content: center;
   background: #865241;
   opacity: 0;
-  overflow: hidden;
+  // overflow: hidden;
   visibility: hidden;
   transition: 0.5s;
 

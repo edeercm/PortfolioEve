@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/header/logo.png'
 import './Header.scss' 
@@ -10,6 +10,36 @@ const Header = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+  
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (isMenuOpen) {
+        event.preventDefault();
+      }
+    };
+  
+    const body = document.body;
+    const html = document.documentElement;
+  
+    if (isMenuOpen) {
+      body.style.overflow = 'hidden';
+      html.style.overflow = 'hidden';
+    } else {
+      setTimeout(() => {
+        body.style.overflow = 'unset';
+        html.style.overflow = 'unset';
+      }, 600); // Retraso en milisegundos antes de restaurar el scroll
+    }
+  
+    window.addEventListener('wheel', handleScroll, { passive: false });
+  
+    return () => {
+      window.removeEventListener('wheel', handleScroll);
+      body.style.overflow = 'unset';
+      html.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+  
 
   return <>
     <header className='container-fluid'>
