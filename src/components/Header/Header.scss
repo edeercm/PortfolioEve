@@ -7,6 +7,10 @@ header {
   height: 6.5rem;
   z-index: 5;
   background-color: transparent;
+
+  @media (max-width: 575.97px) {
+    position: fixed;
+  }
 }
 
 .header-logo {
