@@ -43,9 +43,9 @@ const Header = () => {
 
   return <>
     <header className='container-fluid'>
-      <div>
+      <Link to={'/'}>
         <img src={logo} alt="Logo" className='header-logo' />
-      </div>
+      </Link>
       <input 
         type="checkbox" 
         id="burger-toggle" 
