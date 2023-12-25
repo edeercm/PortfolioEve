@@ -4,8 +4,8 @@ import Home from './pages/Home/Home'
 import Resume from './pages/Resume/Resume'
 import Projects from './pages/Projects/Projects'
 import ProjectOne from './components/Projects/ProjectOne/ProjectOne'
-import ProjecTwo from './components/Projects/ProjectTwo/ProjectTwo'
-import ProjecThree from './components/Projects/ProjectThree/ProjectThree'
+import ProjectTwo from './components/Projects/ProjectTwo/ProjectTwo'
+import ProjectThree from './components/Projects/ProjectThree/ProjectThree'
 import FurnitureProjects from './components/Projects/FurnitureProjects/FurnitureProjects'
 import Contact from './pages/Contact/Contact'
 import './App.css'
@@ -20,8 +20,8 @@ function App() {
           <Route path='Resume' element={<Resume />} />
           <Route path='Projects' element={<Projects />} />
           <Route path='ProjectOne' element={<ProjectOne />} />
-          <Route path='ProjecTwo' element={<ProjecTwo />} />
-          <Route path='ProjecThree' element={<ProjecThree />} />
+          <Route path='ProjectTwo' element={<ProjectTwo />} />
+          <Route path='ProjectThree' element={<ProjectThree />} />
           <Route path='FurnitureProjects' element={<FurnitureProjects />} />
           <Route path='Contact' element={<Contact />} />
         </Route>

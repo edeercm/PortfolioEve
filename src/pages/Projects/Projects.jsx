@@ -41,7 +41,7 @@ const Projects = () => {
                       <img src={project2} alt="Project-2" className='proj-img' />
                     </div>
                     <div className='overlay'>
-                      <Link to={'/ProjecTwo'} className="overlay-text"><span>See project</span></Link>
+                      <Link to={'/ProjectTwo'} className="overlay-text"><span>See project</span></Link>
                     </div>
                   </div>
                   <div className='project-desc-cont'>
@@ -57,7 +57,7 @@ const Projects = () => {
                       <img src={project3} alt="Project-3" className='proj-img' />
                     </div>
                     <div className='overlay'>
-                      <Link to={'/ProjecThree'} className="overlay-text"><span>See project</span></Link>
+                      <Link to={'/ProjectThree'} className="overlay-text"><span>See project</span></Link>
                     </div>
                   </div>
                   <div className='project-desc-cont'>
