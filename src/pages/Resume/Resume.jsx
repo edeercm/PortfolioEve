@@ -7,7 +7,6 @@ import illustrator from '../../assets/images/icons/illustrator.png'
 import photoshop from '../../assets/images/icons/photoshop.png'
 import office from '../../assets/images/icons/office.png'
 import revit from '../../assets/images/icons/revit.png'
-import '../Resume/Resume.css'
 
 const Resumesecc = styled.section`
   width: 100%;
@@ -39,8 +38,7 @@ const Persname = styled.h1`
 
 
   @media (max-width: 575.97px) {
-    font-size: 3.25rem;
-
+    font-size: 3rem;
   }
 `;
 
@@ -54,7 +52,8 @@ const Email = styled.h5`
 
 
   @media (max-width: 575.97px) {
-
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
   }
 `;
 
@@ -68,7 +67,7 @@ const Number = styled.h5`
 
 
   @media (max-width: 575.97px) {
-
+    font-size: 1.125rem;
   }
 `;
 
@@ -120,7 +119,7 @@ const Label = styled.h5`
 
 
   @media (max-width: 575.97px) {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 
   }
 `;
@@ -152,7 +151,7 @@ const Labeltwo = styled.span`
 
 
   @media (max-width: 575.97px) {
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
 
   }
 `;
@@ -168,7 +167,7 @@ const Labelthree = styled.span`
 
 
   @media (max-width: 575.97px) {
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
 
   }
 `;
@@ -183,7 +182,7 @@ const Labelfour = styled.span`
 
 
   @media (max-width: 575.97px) {
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
 
   }
 `;
@@ -199,6 +198,7 @@ const Conthree = styled.div`
 
 
   @media (max-width: 575.97px) {
+    margin-top: 1rem;
   }
 `;
 
@@ -230,7 +230,7 @@ const Icon = styled.img`
 
 
   @media (max-width: 575.97px) {
-
+    width: 40%;
   }
 `;
 
@@ -249,7 +249,6 @@ const Contfive = styled.div`
 
   }
 `;
-
 
 const Resume = () => {
   return <>
@@ -298,7 +297,7 @@ const Resume = () => {
               </div>
               <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <Contone>
-                  <div className='lenguages'>
+                  <div className='lenguages mt-3 mt-md-0 mt-lg-0 mt-xl-0'>
                     <Label>Languages</Label>
                     <Contwo>
                       <Labeltwo>Spanish</Labeltwo>

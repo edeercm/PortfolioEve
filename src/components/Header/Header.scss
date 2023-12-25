@@ -26,12 +26,14 @@ header {
       visibility: visible;
 
       span {
+        font-weight: bold;
         font-size: 5rem;
+        letter-spacing: 0.25rem;
         color: var(--tertiary-color);
         transition: color 0.3s ease-in;
 
         &:hover {
-          color: #F4F2EF;
+          color: #B3C3B5;
         }
 
         @media (max-width: 575.97px) {
@@ -182,8 +184,8 @@ header {
     &-link {
       position: relative;
       display: inline-flex;
-      color: #E9E5DE;
       text-decoration: none;
+      text-transform: uppercase;
 
       span {
         overflow: hidden;
