@@ -8,7 +8,7 @@
     background-color: var(--principal-color);
 }
 
-#home::before,
+/* #home::before,
 #home::after {
   content: '';
   position: absolute;
@@ -26,7 +26,7 @@
 #home::after {
   right: 0;
   bottom: 13.5rem;
-}
+} */
 
 .home-content {
     line-height: 1.5;
@@ -35,14 +35,14 @@
 .home-title {
     color: var(--secondary-color);
     line-height: 0.875;
-    font-size: 9.25rem;
+    font-size: 9.925rem;
     font-weight: 400;
     text-transform: uppercase;
 }
 
 .home-label {
     color: var(--secondary-color);
-    font-size: 1.5rem;
+    font-size: 1.275rem;
     text-transform: uppercase;
 }
 
