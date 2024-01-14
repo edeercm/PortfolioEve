@@ -1,10 +1,7 @@
 .form-control {
     margin: 0 0 1rem 3rem;
-    /* margin-left: 3rem;
-    margin-bottom: 1rem; */
     border-radius: 0;
     border-color: transparent;
-    /* border-bottom-color: #865241; */
     border-bottom: 0.175rem solid #865241;
     background-color: transparent;
 }
@@ -12,8 +9,8 @@
 .form-control::placeholder {
     color: #865241;
     font-size: 1.125rem;
-    font-family: 'Gilroy-Medium', sans-serif;   
-  }
+    font-family: 'Gilroy-Medium', sans-serif; 
+}
 
 .form-control:focus {
     box-shadow: none;
@@ -85,13 +82,6 @@
     background-color: #865241;
     transition: all 0.3s ease-in; /* Transición suave */
 }
-/* 
-.modal-btn:hover {
-    color: #E9E5DE;
-    background-color: #865241;
-    transition: all 0.3s ease-out;
-} */
-
 
 
 

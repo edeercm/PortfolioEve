@@ -25,6 +25,8 @@ const Contone = styled.section`
   width: 75%;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    margin-top: 3rem;
+    width: 100%;
   }
 
   @media (max-width: 575.97px) {
@@ -39,6 +41,8 @@ const Contwo = styled.section`
   justify-content: space-between;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    margin-bottom: 1rem;
+    height: 30vh;
   }
 
   @media (max-width: 575.97px) {
@@ -81,12 +85,13 @@ const Icon = styled.img`
 `;
 
 const Conthree = styled.section`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+
   }
 
   @media (max-width: 575.97px) {
@@ -115,6 +120,7 @@ const Contfour = styled.section`
   background-color: var(--quinary-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 100%;
   }
 
   @media (max-width: 575.97px) {
