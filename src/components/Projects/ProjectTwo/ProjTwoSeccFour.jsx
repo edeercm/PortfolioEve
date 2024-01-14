@@ -11,7 +11,7 @@ const SeccFour = styled.section`
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     height: auto;
-    padding: 3rem 0;
+    padding: 3rem 0 5rem;
   }
 
   @media (max-width: 575.98px) {
@@ -34,6 +34,8 @@ const Contone = styled.div`
 
 const Img = styled.img`
   width: 100%;
+  height: auto;
+
   
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
