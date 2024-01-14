@@ -24,12 +24,12 @@ function ContactForm() {
     >
       <input
         type="text"
-        id="fullName"
-        name='fullName'
+        id="name"
+        name='name'
         placeholder='Name'
-        {...register("fullName", { required: true })}
-        onBlur={() => handleBlur("fullName")}
-        className={`form-control ${errors.fullName ? 'is-invalid' : ''}`}
+        {...register("name", { required: true })}
+        onBlur={() => handleBlur("name")}
+        className={`form-control ${errors.name ? 'is-invalid' : ''}`}
       />
       <input
         type="email"
@@ -51,13 +51,13 @@ function ContactForm() {
       <button
         type="submit"
         className={`contact-btn ${!isValid ? 'contact-btn-disabled' : ''}`}
-        data-bs-toggle="modal"
-        data-bs-target="#contactModal"
+        // data-bs-toggle="modal"
+        // data-bs-target="#contactModal"
         disabled={!isDirty || !isValid}
       >
         Submit
       </button>
-      <div className="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      {/* <div className="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
@@ -68,7 +68,9 @@ function ContactForm() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <input type="hidden" name="_next" value="https://eacreativestudio.netlify.app/"></input>
+      <input type="hidden" name="_captcha" value="false"></input>
     </form>
   );
 }
