@@ -88,10 +88,9 @@ const Contone = styled.div`
 `;
 
 const Contonedotone = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5rem;
-
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
 
@@ -100,8 +99,6 @@ const Contonedotone = styled.div`
 
   @media (max-width: 575.97px) {
     margin-top: 1.25rem;
-    
-
   }
 `;
 
@@ -188,14 +185,13 @@ const Labelfour = styled.span`
 `;
 
 const Conthree = styled.div`
-    display: flex;
-    flex-direction: row;
-
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
 
   }
-
 
   @media (max-width: 575.97px) {
     margin-top: 1rem;

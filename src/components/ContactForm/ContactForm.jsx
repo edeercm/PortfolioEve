@@ -1,11 +1,11 @@
 import React from 'react';
-import { useForm, Controller } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import './ContactForm.css'
 
 function ContactForm() {
   const { handleSubmit, register, formState: { errors, isDirty, isValid }, trigger, reset } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     if (isValid) {
       reset();
     }
@@ -15,15 +15,17 @@ function ContactForm() {
     await trigger(fieldName);
   };
 
-  const handleSelectBlur = () => {
-    trigger("typeOfInquiry");
-  };
-
   return (
-    <form onSubmit={handleSubmit(onSubmit)} style={{ width: '70%' }}>
+    <form 
+      action="https://formsubmit.co/arq.evelinalvarado@gmail.com" 
+      method="POST" 
+      onSubmit={handleSubmit(onSubmit)} 
+      style={{ width: '70%' }}
+    >
       <input
         type="text"
         id="fullName"
+        name='fullName'
         placeholder='Name'
         {...register("fullName", { required: true })}
         onBlur={() => handleBlur("fullName")}
@@ -32,6 +34,7 @@ function ContactForm() {
       <input
         type="email"
         id="email"
+        name='email'
         placeholder='Email'
         {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
         onBlur={() => handleBlur("email")}
@@ -39,6 +42,7 @@ function ContactForm() {
       />
       <textarea
         id="message"
+        name='message'
         placeholder='Message'
         {...register("message", { required: true })}
         onBlur={() => handleBlur("message")}
