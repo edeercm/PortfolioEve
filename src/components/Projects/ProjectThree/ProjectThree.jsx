@@ -5,7 +5,7 @@ import ProjThreeSeccThree from './ProjThreeSeccThree'
 import ProjThreeSeccFour from './ProjThreeSeccFour'
 import ProjThreeSeccFive from './ProjThreeSeccFive'
 import ProjThreeSeccSix from './ProjThreeSeccSix'
-import ProjNavigation from '../../ProjNavigation/ProjNavigation'
+import ProjNavigation from '../ProjectsNavigation'
 
 const ProjectThree = () => {
   return <>

@@ -3,7 +3,7 @@ import SeccionOne from './ProjTwoSeccOne'
 import SeccionTwo from './ProjTwoSeccTwo'
 import SeccionThree from './ProjTwoSeccThree'
 import SeccionFourComponent from './ProjTwoSeccFour'
-import ProjNavigation from '../../ProjNavigation/ProjNavigation'
+import ProjNavigation from '../ProjectsNavigation'
 
 const ProjectTwo = () => {
   return <>

@@ -5,7 +5,7 @@ import SeccionThree from './SeccionThree'
 import SeccionFour from './SeccionFour'
 import SeccionFive from './SeccionFive'
 import SeccionSix from './SeccionSix'
-import ProjNavigation from '../../ProjNavigation/ProjNavigation'
+import ProjectsNavigation from '../ProjectsNavigation'
 
 const ProjectOne = () => {
 
@@ -16,7 +16,7 @@ const ProjectOne = () => {
     <SeccionFour />
     <SeccionFive />
     <SeccionSix />
-    <ProjNavigation
+    <ProjectsNavigation
       projects={[
         { path: '/ProjectOne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },
         { path: '/ProjectTwo', name: 'Remodelación Comedor Studio YG' },

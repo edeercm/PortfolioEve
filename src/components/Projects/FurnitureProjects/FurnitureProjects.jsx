@@ -3,7 +3,7 @@ import FurnProjOne from './FurnProjOne/FurnProjOne'
 import FurnProjTwo from './FurnProjTwo/FurnProjTwo'
 import FurnProjThree from './FurnProjThree/FurnProjThree'
 import FurnProjFour from './FurnProjFour/FurnProjFour'
-import ProjNavigation from '../../ProjNavigation/ProjNavigation'
+import ProjNavigation from '../ProjectsNavigation'
 
 const FurnitureProjects = () => {
   return <>
