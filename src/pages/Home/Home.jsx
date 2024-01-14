@@ -24,8 +24,13 @@ const Title = styled.h1`
   font-weight: 400;
   text-transform: uppercase;
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 7.25rem;
+  }
+
   @media (max-width: 575.97px) {
   }
+  
 `;
 
 const Label = styled.span`

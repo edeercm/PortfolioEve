@@ -24,17 +24,22 @@ const Navcont = styled.div`
 const Img = styled.img`
   margin-bottom: 2.5rem;
   width: 3.75rem;
+  cursor: pointer;
 
+  ${props => props.disabled && `
+    cursor: not-allowed;
+  `}
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
 
   @media (max-width: 575.98px) {
+    width: 3.075rem;
   }
 `;
 
 const ProjNavigation = ({ projects, currentProjectIndex }) => {
-  
+
   const prevProjectIndex = currentProjectIndex > 0 ? currentProjectIndex - 1 : projects.length - 1;
   const nextProjectIndex = currentProjectIndex < projects.length - 1 ? currentProjectIndex + 1 : 0;
 
@@ -51,14 +56,14 @@ const ProjNavigation = ({ projects, currentProjectIndex }) => {
   return (
     <Navcont className='container-fluid'>
       {isProjectOne ? (
-        <Img src={prev} alt="Prev-icon" />
+        <Img src={prev} alt="Prev-icon" disabled />
       ) : (
         <Link to={projects[prevProjectIndex].path}>
           <Img src={prev} alt="Prev-icon" />
         </Link>
       )}
       {isProjectFour ? (
-        <Img src={next} alt="Next-icon" />
+        <Img src={next} alt="Next-icon" disabled />
       ) : (
         <Link to={projects[nextProjectIndex].path}>
           <Img src={next} alt="Next-icon" />

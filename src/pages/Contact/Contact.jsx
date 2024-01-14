@@ -12,7 +12,6 @@ const Contactsecc = styled.section`
   justify-content: center;
   background-color: var(--principal-color);
 
-
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
 
