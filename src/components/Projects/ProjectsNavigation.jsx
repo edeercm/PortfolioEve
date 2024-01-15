@@ -21,6 +21,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 575.98px) {
+    height: 15vh;
     justify-content: space-around;
   }
 `;
