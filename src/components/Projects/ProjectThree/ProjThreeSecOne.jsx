@@ -110,9 +110,8 @@ const ProjThreeSecOne = () => {
             <Contwo>
               <Conthree>
                 <Label>Description</Label>
-                <Labeltwo>San Bruno has been characterized as a neighborhood with numerous social and environmental issues, coupled with a lack of access to recreational and cultural activities, nearby healthcare services, and areas designated for sports activities.</Labeltwo>
-                <Labeltwo>The purpose of the project is to generate a restoration proposal, to commemorate and contrast with what has already been built, creating spaces that foster social interaction and applying the concept of multifunctionality to the design of these spaces.</Labeltwo>
-                <Labeltwo>This aims to demonstrate that it's possible to develop high-quality architecture in the marginalized sectors of the city.</Labeltwo>
+                <Labeltwo>Strategically located in Puerto Escondido, "Luna&Mar" seamlessly blends into its surroundings. The architectural and interior design successfully merges modernity with serenity. This holistic sanctuary not only provides a wellness escape but also reflects an intrinsic connection with the surrounding nature, thus establishing a harmonious balance between contemporary design and the holistic essence of the spa.</Labeltwo>
+                <Labeltwo>The color palette consists of soothing tones of blues, greens, and neutrals, inspired by the hues of the surrounding nature. These colors are incorporated into the walls and furniture selection to create an atmosphere of tranquility and harmony.</Labeltwo>
               </Conthree>
               <Contfour>
                 <Labelthree>Designed with</Labelthree>
