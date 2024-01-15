@@ -29,7 +29,7 @@ const Title = styled.h1`
   }
 
   @media (max-width: 575.97px) {
-    font-size: 3.45rem;
+    font-size: 3.25rem;
   }
   
 `;
@@ -45,6 +45,7 @@ const Label = styled.span`
 
   @media (max-width: 575.97px) {
     line-height: 1;
+    font-size: 0.785rem;
   }
 `;
 
@@ -107,9 +108,9 @@ const IconsContainer = styled.div`
 const Home = () => {
   return <>
     <Section id='home'>
-      <div className="container-fluid d-flex justify-content-center">
+      <div className="container-sm container-md container-lg container-xl container-xxl d-flex justify-content-center">
         <div className="row">
-          <div className="col-md-12 col-lg-12 col-xl-12">
+          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <Title>Portfolio</Title>
             <Label>Evelin Nohemi Alvarado Mendoza | Architect</Label>
           </div>
