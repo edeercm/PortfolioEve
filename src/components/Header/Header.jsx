@@ -20,8 +20,10 @@ const Header = () => {
   
     const body = document.body;
     const html = document.documentElement;
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   
-    if (isMenuOpen) {
+    if (isMenuOpen && !isMobile) {
       body.style.overflow = 'hidden';
       html.style.overflow = 'hidden';
     } else {
