@@ -104,7 +104,6 @@ const IconsContainer = styled.div`
   }
 `;
 
-
 const Home = () => {
   return <>
     <Section id='home'>

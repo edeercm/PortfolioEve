@@ -4,13 +4,17 @@ import styled from 'styled-components';
 import prev from '../../assets/images/projectsnavigation/prev.png'
 import next from '../../assets/images/projectsnavigation/next.png'
 
-const Navcont = styled.div`
+const Container = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--principal-color);
+
+  a {
+    text-decoration: none;
+  }
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     
@@ -21,8 +25,20 @@ const Navcont = styled.div`
   }
 `;
 
+const SubContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.98px) {
+  }
+`;
+
 const Img = styled.img`
-  margin-bottom: 2.5rem;
   width: 3.75rem;
   cursor: pointer;
 
@@ -35,6 +51,17 @@ const Img = styled.img`
 
   @media (max-width: 575.98px) {
     width: 3.075rem;
+  }
+`;
+
+const Label = styled.h1`
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  }
+
+  @media (max-width: 575.98px) {
   }
 `;
 
@@ -54,22 +81,34 @@ const ProjNavigation = ({ projects, currentProjectIndex }) => {
   const isProjectFour = location.pathname === '/FurnitureProjects';
 
   return (
-    <Navcont className='container-fluid'>
+    <Container className='container-fluid'>
       {isProjectOne ? (
-        <Img src={prev} alt="Prev-icon" disabled />
+        <SubContainer>
+          <Img src={prev} alt="Prev-icon" />
+          <Label>PREV</Label>
+        </SubContainer>
       ) : (
         <Link to={projects[prevProjectIndex].path}>
-          <Img src={prev} alt="Prev-icon" />
+          <SubContainer>
+            <Img src={prev} alt="Prev-icon" />
+            <Label>PREV</Label>
+          </SubContainer>
         </Link>
       )}
       {isProjectFour ? (
-        <Img src={next} alt="Next-icon" disabled />
+        <SubContainer>
+          <Img src={next} alt="Next-icon" />
+          <Label>NEXT</Label>
+        </SubContainer>
       ) : (
         <Link to={projects[nextProjectIndex].path}>
-          <Img src={next} alt="Next-icon" />
+          <SubContainer>
+            <Img src={next} alt="Next-icon" />
+            <Label>NEXT</Label>
+          </SubContainer>
         </Link>
       )}
-    </Navcont>
+    </Container>
   );
 };
 
