@@ -23,7 +23,7 @@ const Header = () => {
 
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   
-    if (isMenuOpen && !isMobile) {
+    if (isMenuOpen && isMobile) {
       body.style.overflow = 'hidden';
       html.style.overflow = 'hidden';
     } else {
