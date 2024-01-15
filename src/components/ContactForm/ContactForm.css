@@ -2,12 +2,12 @@
     margin: 0 0 1rem 3rem;
     border-radius: 0;
     border-color: transparent;
-    border-bottom: 0.175rem solid #865241;
+    border-bottom: 0.175rem solid var(--secondary-color);
     background-color: transparent;
 }
 
 .form-control::placeholder {
-    color: #865241;
+    color: var(--secondary-color);
     font-size: 1.125rem;
     font-family: 'Gilroy-Medium', sans-serif; 
 }
@@ -15,7 +15,7 @@
 .form-control:focus {
     box-shadow: none;
     border-color: transparent;
-    border-bottom-color: #865241;
+    border-bottom-color: var(--secondary-color);
     background-color: transparent;
 }
 
@@ -40,30 +40,29 @@
     height: 2rem;
     border: none;
     border-radius: 0.175rem;
-    color: #E9E5DE;
+    color: var(--principal-color);
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     cursor: pointer;
-    background-color: #865241;
+    background-color: var(--secondary-color);
     transition: all 0.3s ease-in; /* Transición suave */
 }
 
 .contact-btn:hover {
-    color: #865241;
-    background-color: #E9E5DE;
+    color: var(--secondary-color);
+    background-color: var(--principal-color);
     transition: all 0.3s ease-out; /* Transición suave */
 }
-
 
 .contact-btn-disabled {
     cursor: not-allowed;
 }
 
 .modal-content {
-    background-color: #E9E5DE;
+    background-color: var(--principal-color);
 }
 
 .modal-btn {
@@ -72,14 +71,14 @@
     height: 2rem;
     border: none;
     border-radius: 0.175rem;
-    color: #E9E5DE;
+    color: var(--principal-color);
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     cursor: pointer;
-    background-color: #865241;
+    background-color: var(--secondary-color);
     transition: all 0.3s ease-in; /* Transición suave */
 }
 
