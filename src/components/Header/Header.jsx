@@ -41,7 +41,6 @@ const Header = () => {
       html.style.overflow = 'unset';
     };
   }, [isMenuOpen]);
-  
 
   return <>
     <header className='container-fluid'>
@@ -70,21 +69,21 @@ const Header = () => {
               </Link>
             </div>
             <div className="menu-nav-item">
-              <Link to={'Resume'} className="menu-nav-link"  onClick={closeMenu}>
+              <Link to={'Resume'} className="menu-nav-link" onClick={closeMenu}>
                 <span>
                   <div>Resume</div>
                 </span>
               </Link>
             </div>
             <div className="menu-nav-item">
-              <Link to={'Projects'} className="menu-nav-link"  onClick={closeMenu}>
+              <Link to={'Projects'} className="menu-nav-link" onClick={closeMenu}>
                 <span>
                   <div>Projects</div>
                 </span>
               </Link>
             </div>
             <div className="menu-nav-item">
-              <Link to={'Contact'} className="menu-nav-link"  onClick={closeMenu}>
+              <Link to={'Contact'} className="menu-nav-link" onClick={closeMenu}>
                 <span>
                   <div>Contact</div>
                 </span>
