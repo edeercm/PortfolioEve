@@ -1,11 +1,11 @@
 import React from 'react'
-import FurnOneSeccOne from './FurnOneSeccOne'
-import FurnOneSeccTwo from './FurnOneSeccTwo'
+import SecOne from './FurnOneSecOne'
+import SecTwo from './FurnOneSecTwo'
 
 const FurnProjOne = () => {
   return <>
-    <FurnOneSeccOne />
-    <FurnOneSeccTwo />
+    <SecOne />
+    <SecTwo />
   </>
 }
 

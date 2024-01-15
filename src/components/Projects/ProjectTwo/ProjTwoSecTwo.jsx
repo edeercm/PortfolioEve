@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import two01 from '../../../assets/images/projectwo/two01.png'
 import two02 from '../../../assets/images/projectwo/two02.png'
 import two03 from '../../../assets/images/projectwo/two03.png'
-import '../../Projects/SeccionOneGlobalStyles.css'
 
 const SeccTwo = styled.section`
   height: 100vh;
@@ -13,6 +12,7 @@ const SeccTwo = styled.section`
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     height: auto;
+    padding: 5.5rem 0;
   }
 
   @media (max-width: 575.98px) {
@@ -104,9 +104,9 @@ const Contwo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   
   @media (min-width: 575.98px) and (max-width: 991.98px) {
+    height: 45vh;
   }
 
   @media (max-width: 575.98px) {
@@ -146,6 +146,10 @@ const Imgthree = styled.img`
   right: 26%;
   z-index: 2;
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    right: 21%;
+  }
+
   @media (max-width: 575.98px) {
     width: 20%;
     top: 42.5%;
@@ -160,6 +164,10 @@ const Artone = styled.article`
   z-index: 3;
   color: var(--quaternary-color);
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    left: 28.75%;
+  }
+
   @media (max-width: 575.98px) {
     display: none;
   }
@@ -172,6 +180,10 @@ const Artwo = styled.article`
   z-index: 3;
   color: var(--quaternary-color);
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    top: 62.5%;
+  }
+
   @media (max-width: 575.98px) {
     display: none;
   }
@@ -183,6 +195,11 @@ const Arthree = styled.article`
   left: 31%;
   z-index: 3;
   color: var(--quaternary-color);
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    top: 72%;
+    left: 28%;
+  }
 
   @media (max-width: 575.98px) {
     display: none;
@@ -197,6 +214,10 @@ const Artfour = styled.article`
   z-index: 3;
   color: var(--quaternary-color);
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    right: 8%;
+  }
+
   @media (max-width: 575.98px) {
     display: none;
   }
@@ -210,6 +231,11 @@ const Artfive = styled.article`
   z-index: 3;
   color: var(--quaternary-color);
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    right: 13%;
+    top: 59%;
+  }
+
   @media (max-width: 575.98px) {
     display: none;
   }
@@ -219,12 +245,20 @@ const Lineone = styled.div`
   width: 10rem;
   height: 0.15rem;
   background-color: black;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 7rem;
+  }
 `;
 
 const Linetwo = styled.div`
   width: 15rem;
   height: 0.15rem;
   background-color: black;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 10rem;
+  }
 `;
 
 const Circle = styled.div`
@@ -233,7 +267,7 @@ const Circle = styled.div`
   border-radius: 50%;
 `;
 
-const SeccionTwo = () => {
+const ProjTwoSecTwo = () => {
   return (
     <SeccTwo>
       <div className='container-sm container-md container-lg container-xl container-xxl'>
@@ -293,4 +327,4 @@ const SeccionTwo = () => {
   );
 };
 
-export default SeccionTwo 
+export default ProjTwoSecTwo 

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import four from '../../../assets/images/projectone/four.jpg';
+import six from '../../../assets/images/projectone/six.png';
 
-const SeccFour = styled.section`
+const SeccSix = styled.section`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -11,24 +11,24 @@ const SeccFour = styled.section`
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     height: auto;
-    padding: 5rem 0;
+    padding: 3.5rem 0 5rem;
   }
 
   @media (max-width: 575.98px) {
     height: auto;
-    padding: 3.5rem 0 1.25rem;
+    padding: 0 0 3.5rem;
   }
 `;
 
-const Cont = styled.div`
-  width: 52%;
+const Contone = styled.div`
+  width: 72%;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     width: 100%;
   }
 
   @media (max-width: 575.98px) {
-    width: 100%;
+    width: 100%; 
   }
 `;
 
@@ -36,26 +36,11 @@ const Contwo = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-
-  }
-
-  @media (max-width: 575.98px) {
-
-  }
 `;
 
 const Img = styled.img`
   width: 100%;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-
-  }
-
-  @media (max-width: 575.98px) {
-
-  }
+  height: auto;
 `;
 
 const Label = styled.span`
@@ -65,32 +50,27 @@ const Label = styled.span`
   text-transform: uppercase;
   color: var(--quaternary-color);
 
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-
-  }
-
   @media (max-width: 575.98px) {
     bottom: -1.5rem;
   }
 `;
 
-
-const SeccionFour = () => {
+const ProjOneSecSix = () => {
   return (
-    <SeccFour>
-      <Cont className="container-sm container-md container-lg container-xl container-xxl">
+    <SeccSix>
+      <Contone className="container-sm container-md container-lg container-xl container-xxl">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <Contwo>
-              <Img src={four} alt="Render four" />
-              <Label>Floor plan view</Label>
+              <Img src={six} alt="Render six" />
+              <Label>Interior view of workshop</Label>
             </Contwo>
           </div>
         </div>
-      </Cont>
-    </SeccFour>
+      </Contone>
+    </SeccSix>
   );
 };
 
-export default SeccionFour;
+export default ProjOneSecSix;
+

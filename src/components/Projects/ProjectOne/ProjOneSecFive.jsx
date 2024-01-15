@@ -51,7 +51,7 @@ const Label = styled.span`
 `;
 
 
-const SeccionFive = () => {
+const ProjOneSecFive = () => {
   return (
     <SeccFive>
       <div className="container=sm container-md container-lg container-xl container-xxl">
@@ -74,4 +74,4 @@ const SeccionFive = () => {
   );
 };
 
-export default SeccionFive 
+export default ProjOneSecFive 

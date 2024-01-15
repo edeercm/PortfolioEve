@@ -41,7 +41,7 @@ const Img = styled.img`
   }
 `;
 
-const SeccionFourComponent = () => {
+const ProjTwoSecFour  = () => {
   return (
     <SeccFour>
       <div className="container-sm container-md container-lg container-xl container-xxl">
@@ -58,4 +58,4 @@ const SeccionFourComponent = () => {
   );
 };
 
-export default SeccionFourComponent;
+export default ProjTwoSecFour ;

@@ -1,21 +1,20 @@
 import React from 'react'
-import SeccionOne from './SeccionOne'
-import SeccionTwo from './SeccionTwo'
-import SeccionThree from './SeccionThree'
-import SeccionFour from './SeccionFour'
-import SeccionFive from './SeccionFive'
-import SeccionSix from './SeccionSix'
+import SecOne from './ProjOneSecOne'
+import SecTwo from './ProjOneSecTwo'
+import SecThree from './ProjOneSecThree'
+import SecFour from './ProjOneSecFour'
+import SecFive from './ProjOneSecFive'
+import SecSix from './ProjOneSecSix'
 import ProjectsNavigation from '../ProjectsNavigation'
 
 const ProjectOne = () => {
-
   return <>
-    <SeccionOne />
-    <SeccionTwo />
-    <SeccionThree />
-    <SeccionFour />
-    <SeccionFive />
-    <SeccionSix />
+    <SecOne />
+    <SecTwo />
+    <SecThree />
+    <SecFour />
+    <SecFive />
+    <SecSix />
     <ProjectsNavigation
       projects={[
         { path: '/ProjectOne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },

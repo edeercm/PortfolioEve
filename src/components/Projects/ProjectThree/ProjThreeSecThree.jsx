@@ -110,7 +110,7 @@ const Circle = styled.div`
 
 `;
 
-const ProjThreeSeccThree = () => {
+const ProjThreeSecThree = () => {
   return (
     <Seccthree>
       <div className="container-sm container-md container-lg container-xl container-xxl">
@@ -150,4 +150,4 @@ const ProjThreeSeccThree = () => {
   )
 }
 
-export default ProjThreeSeccThree
+export default ProjThreeSecThree

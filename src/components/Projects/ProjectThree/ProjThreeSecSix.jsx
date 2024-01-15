@@ -43,7 +43,7 @@ const Img = styled.img`
 `;
 
 
-const ProjThreeSeccSix = () => {
+const ProjThreeSecSix = () => {
   return (
     <Seccsix>
       <div className="container-md container-lg container-xl container-xxl">
@@ -60,4 +60,4 @@ const ProjThreeSeccSix = () => {
   )
 }
 
-export default ProjThreeSeccSix
+export default ProjThreeSecSix

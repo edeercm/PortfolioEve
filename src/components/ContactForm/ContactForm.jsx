@@ -69,8 +69,8 @@ function ContactForm() {
           </div>
         </div>
       </div> */}
-      <input type="hidden" name="_next" value="https://eacreativestudio.netlify.app/"></input>
-      <input type="hidden" name="_captcha" value="false"></input>
+      {/* <input type="hidden" name="_next" value=""></input>
+      <input type="hidden" name="_captcha" value="false"></input> */}
     </form>
   );
 }

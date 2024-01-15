@@ -51,7 +51,7 @@ const Img = styled.img`
 `;
 
 
-const ProjThreeSeccFour = () => {
+const ProjThreeSecFour = () => {
   return (
     <Seccfour>
       <div className="container-xxl">
@@ -68,4 +68,4 @@ const ProjThreeSeccFour = () => {
   )
 }
 
-export default ProjThreeSeccFour
+export default ProjThreeSecFour

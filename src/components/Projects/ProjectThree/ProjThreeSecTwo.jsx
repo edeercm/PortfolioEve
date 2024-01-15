@@ -49,7 +49,7 @@ const Desc = styled.span`
   text-transform: uppercase;
 `;
 
-const ProjThreeSeccTwo = () => {
+const ProjThreeSecTwo = () => {
   return (
     <Secctwo>
       <div className="container-sm container-md container-lg container-xl container-xxl">
@@ -72,4 +72,4 @@ const ProjThreeSeccTwo = () => {
   );
 };
 
-export default ProjThreeSeccTwo
+export default ProjThreeSecTwo

@@ -30,7 +30,7 @@ const Img = styled.img`
   }
 `;
 
-const SeccionTwo = () => {
+const ProjOneSecOne = () => {
   return (
     <SeccTwo>
       <div className="container-md container-lg container-xl container-xxl">
@@ -50,4 +50,4 @@ const SeccionTwo = () => {
   );
 };
 
-export default SeccionTwo;
+export default ProjOneSecOne;

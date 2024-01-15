@@ -30,7 +30,7 @@ const Img = styled.img`
   }
 `;
 
-const SeccionThree = () => {
+const ProjOneSecThree = () => {
   return (
     <SeccThree>
       <div className="container-sm container-md container-lg container-xl container-xxl">
@@ -50,4 +50,4 @@ const SeccionThree = () => {
   );
 };
 
-export default SeccionThree;
+export default ProjOneSecThree;

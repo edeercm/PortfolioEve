@@ -1,12 +1,12 @@
 import React from 'react'
-import FurnThreeSeccOne from './FurnThreeSeccOne'
-import FurnThreeSeccTwo from './FurnThreeSeccTwo'
+import SecOne from './FurnThreeSecOne'
+import SecTwo from './FurnThreeSecTwo'
 
-const FurnitureThree = () => {
+const FurnProjThree = () => {
   return <>
-    <FurnThreeSeccOne />
-    <FurnThreeSeccTwo />
+    <SecOne />
+    <SecTwo />
   </>
 }
 
-export default FurnitureThree
+export default FurnProjThree

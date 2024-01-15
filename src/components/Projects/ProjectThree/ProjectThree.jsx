@@ -1,20 +1,20 @@
 import React from 'react'
-import ProjThreeSeccOne from './ProjThreeSeccOne'
-import ProjThreeSeccTwo from './ProjThreeSeccTwo'
-import ProjThreeSeccThree from './ProjThreeSeccThree'
-import ProjThreeSeccFour from './ProjThreeSeccFour'
-import ProjThreeSeccFive from './ProjThreeSeccFive'
-import ProjThreeSeccSix from './ProjThreeSeccSix'
+import SecOne from './ProjThreeSecOne'
+import SecTwo from './ProjThreeSecTwo'
+import SecThree from './ProjThreeSecThree'
+import SecFour from './ProjThreeSecFour'
+import SecFive from './ProjThreeSecFive'
+import SecSix from './ProjThreeSecSix'
 import ProjNavigation from '../ProjectsNavigation'
 
 const ProjectThree = () => {
   return <>
-    <ProjThreeSeccOne />
-    <ProjThreeSeccTwo />
-    <ProjThreeSeccThree />
-    <ProjThreeSeccFour />
-    <ProjThreeSeccFive />
-    <ProjThreeSeccSix />
+    <SecOne />
+    <SecTwo />
+    <SecThree />
+    <SecFour />
+    <SecFive />
+    <SecSix />
     <ProjNavigation
       projects={[
         { path: '/ProjectOne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },

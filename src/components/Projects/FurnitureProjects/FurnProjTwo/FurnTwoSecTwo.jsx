@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import two from '../../../../assets/images/projectfour/FurnitureTwo/two.png'
 import three from '../../../../assets/images/projectfour/FurnitureTwo/three.png'
 
-const Secctwo = styled.section`
+const SecTwo = styled.section`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -112,7 +112,7 @@ const Linetwo = styled.div`
 
 const FurnTwoSeccTwo = () => {
   return (
-    <Secctwo>
+    <SecTwo>
       <div className="container-md container-lg container-xl container-xxl">
         <div className="row gap-md-5 gap-lg-0 gap-xl-0">
           <div className="col-md-12 col-lg-6 col-xl-6" >
@@ -142,7 +142,7 @@ const FurnTwoSeccTwo = () => {
           </div>
         </div>
       </div>
-    </Secctwo>
+    </SecTwo>
   )
 }
 

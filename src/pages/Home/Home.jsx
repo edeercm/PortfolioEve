@@ -29,6 +29,7 @@ const Title = styled.h1`
   }
 
   @media (max-width: 575.97px) {
+    font-size: 3.45rem;
   }
   
 `;
@@ -38,7 +39,12 @@ const Label = styled.span`
   font-size: 1.275rem;
   text-transform: uppercase;
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+
+  }
+
   @media (max-width: 575.97px) {
+    line-height: 1;
   }
 `;
 
@@ -62,7 +68,12 @@ const Img = styled.img`
   0 4px 6px rgba(0, 0, 0, 0.1),
   0 1px 3px rgba(0, 0, 0, 0.08);
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    max-width: 100%;
+  }
+
   @media (max-width: 575.97px) {
+    max-width: 100%;
   }
 `;
 
@@ -71,6 +82,8 @@ const LabelTwo = styled.span`
   font-size: 1.025rem;
 
   @media (max-width: 575.97px) {
+    margin-top: 0.75rem;
+    text-align: justify;
   }
 `;
 
@@ -86,6 +99,7 @@ const IconsContainer = styled.div`
   }
 
   @media (max-width: 575.97px) {
+    margin-top: 1rem;
   }
 `;
 
