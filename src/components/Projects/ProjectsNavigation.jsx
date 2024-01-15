@@ -62,7 +62,7 @@ const Label = styled.h1`
   }
 
   @media (max-width: 575.98px) {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 `;
 
