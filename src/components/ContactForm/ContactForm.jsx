@@ -7,27 +7,12 @@ function ContactForm() {
 
   const { handleSubmit, register, formState: { errors, isDirty, isValid }, trigger, reset } = useForm();
 
-  const [formspreeState, formspreeSubmit] = useFormspree('mgegvzrv'); // Reemplaza 'mgegvzrv' con tu hashid
-
-  // const onSubmit = () => {
-  //   if (isValid) {
-  //     reset();
-  //   }
-  // };
+  const [formspreeState, formspreeSubmit] = useFormspree('mgegvzrv');
 
   const onSubmit = async (data) => {
     if (isValid) {
-      // Enviar el formulario a Formspree usando su hook
       await formspreeSubmit(data);
-
-      // Restablecer el formulario después de enviar con éxito
       reset();
-
-      // Mostrar el modal solo si el envío fue exitoso
-      // if (formspreeState.succeeded) {
-      //   const contactModal = new window.bootstrap.Modal(document.getElementById('contactModal'));
-      //   contactModal.show();
-      // }
     }
   };
 
@@ -36,10 +21,7 @@ function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      style={{ width: '70%' }}
-    >
+    <form onSubmit={handleSubmit(onSubmit)} style={{ width: '70%' }}>
       <input
         type="text"
         id="name"
@@ -63,6 +45,7 @@ function ContactForm() {
         name='message'
         placeholder='Message'
         {...register("message", { required: true })}
+        // {...register("message", { required: true, minLength: 15, maxLength: 50 })}
         onBlur={() => handleBlur("message")}
         className={`form-control text-area ${errors.message ? 'is-invalid' : ''}`}
       />
