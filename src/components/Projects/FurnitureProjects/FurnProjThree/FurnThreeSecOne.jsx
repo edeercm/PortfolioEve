@@ -40,7 +40,7 @@ const ContThree = styled.div`
 
   @media (max-width: 575.97px) {
     right: 0;
-    bottom: -1.75rem;
+    bottom: -5rem;
   }
 `;
 
@@ -56,7 +56,7 @@ const ContFour = styled.div`
   }
 
   @media (max-width: 575.97px) {
-    margin-top: 3.5rem;
+    margin-top: 6.75rem;
     width: 100%;
   }
 `;
