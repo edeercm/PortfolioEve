@@ -1,13 +1,33 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useForm as useFormspree } from '@formspree/react';
 import './ContactForm.css'
 
 function ContactForm() {
+
   const { handleSubmit, register, formState: { errors, isDirty, isValid }, trigger, reset } = useForm();
 
-  const onSubmit = () => {
+  const [formspreeState, formspreeSubmit] = useFormspree('mgegvzrv'); // Reemplaza 'mgegvzrv' con tu hashid
+
+  // const onSubmit = () => {
+  //   if (isValid) {
+  //     reset();
+  //   }
+  // };
+
+  const onSubmit = async (data) => {
     if (isValid) {
+      // Enviar el formulario a Formspree usando su hook
+      await formspreeSubmit(data);
+
+      // Restablecer el formulario después de enviar con éxito
       reset();
+
+      // Mostrar el modal solo si el envío fue exitoso
+      // if (formspreeState.succeeded) {
+      //   const contactModal = new window.bootstrap.Modal(document.getElementById('contactModal'));
+      //   contactModal.show();
+      // }
     }
   };
 
@@ -16,10 +36,8 @@ function ContactForm() {
   };
 
   return (
-    <form 
-      action="https://formsubmit.co/arq.evelinalvarado@gmail.com" 
-      method="POST" 
-      onSubmit={handleSubmit(onSubmit)} 
+    <form
+      onSubmit={handleSubmit(onSubmit)}
       style={{ width: '70%' }}
     >
       <input
@@ -51,26 +69,26 @@ function ContactForm() {
       <button
         type="submit"
         className={`contact-btn ${!isValid ? 'contact-btn-disabled' : ''}`}
-        // data-bs-toggle="modal"
-        // data-bs-target="#contactModal"
-        disabled={!isDirty || !isValid}
+        data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+        disabled={!isDirty || !isValid || formspreeState.submitting}
       >
         Submit
       </button>
-      {/* <div className="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title fs-5" id="exampleModalLabel">Thank you for getting in touch with me</h5>
+              <h5 className="modal-title fs-5" id="exampleModalLabel">
+                Thank you for getting in touch with me
+              </h5>
             </div>
             <div className="modal-footer">
               <button type="button" className="modal-btn" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
-      </div> */}
-      {/* <input type="hidden" name="_next" value=""></input>
-      <input type="hidden" name="_captcha" value="false"></input> */}
+      </div>
     </form>
   );
 }
