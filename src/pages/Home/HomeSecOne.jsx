@@ -7,17 +7,18 @@ const Section = styled.section`
   display: flex;
   text-align: end;
   align-items: center;
+  justify-content: center;
 
   @media (max-width: 575.97px) {
   }
 `;
 
 const Title = styled.h1`
-  color: var(--secondary-color);
+  font-weight: 400;
   line-height: 0.875;
   font-size: 9.925rem;
-  font-weight: 400;
   text-transform: uppercase;
+  color: var(--secondary-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     font-size: 7.25rem;
@@ -30,12 +31,11 @@ const Title = styled.h1`
 `;
 
 const Label = styled.span`
-  color: var(--secondary-color);
   font-size: 1.275rem;
   text-transform: uppercase;
+  color: var(--secondary-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-
   }
 
   @media (max-width: 575.97px) {
@@ -46,14 +46,10 @@ const Label = styled.span`
 
 const HomeSecOne = () => {
   return <>
-    <Section id='home'>
-      <div className="container d-flex justify-content-center">
-        <div className="row">
-          <div className="col-12">
-            <Title>Portfolio</Title>
-            <Label>Evelin Nohemi Alvarado Mendoza | Architect</Label>
-          </div>
-        </div>
+    <Section>
+      <div className='d-flex flex-column justify-content-center'>
+        <Title>Portfolio</Title>
+        <Label>Evelin Nohemi Alvarado Mendoza | Architect</Label>
       </div>
     </Section>
   </>
