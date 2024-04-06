@@ -5,13 +5,11 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import Eve from '../../assets/images/EVE.jpg'
 
 const Section = styled.section`
-  position: relative;
   width: 100%;
   height: 97.5vh;
   display: flex;
   text-align: end;
   align-items: center;
-  background-color: var(--principal-color);
 
   @media (max-width: 575.97px) {
   }
@@ -107,9 +105,9 @@ const IconsContainer = styled.div`
 const Home = () => {
   return <>
     <Section id='home'>
-      <div className="container-sm container-md container-lg container-xl container-xxl d-flex justify-content-center">
+      <div className="container d-flex justify-content-center">
         <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div className="col-12">
             <Title>Portfolio</Title>
             <Label>Evelin Nohemi Alvarado Mendoza | Architect</Label>
           </div>
