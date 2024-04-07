@@ -1,23 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import autocad from '../../assets/images/icons/autocad.png'
-import sketchup from '../../assets/images/icons/sketchup.png'
-import vray from '../../assets/images/icons/vray.png'
-import illustrator from '../../assets/images/icons/illustrator.png'
-import photoshop from '../../assets/images/icons/photoshop.png'
-import office from '../../assets/images/icons/office.png'
-import revit from '../../assets/images/icons/revit.png'
-
-
 import ResSecThree from './ResSecThree'
+import ResSecFour from './ResSecFour'
+import ResSecFive from './ResSecFive'
 
-const Resumesecc = styled.section`
+
+const Section = styled.section`
   width: 100%;
   height: 97.5vh;
   display: flex;
   align-items: center;
-  background-color: var( --principal-color);
-
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
   }
@@ -74,19 +66,6 @@ const Number = styled.h5`
   }
 `;
 
-const Contone = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
-  @media (max-width: 575.97px) {
-  }
-`;
-
 const Contonedotone = styled.div`
   display: flex;
   flex-direction: column;
@@ -121,55 +100,8 @@ const Label = styled.h5`
   }
 `;
 
-const Contwo = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5rem;
-
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-
-  }
-
-
-  @media (max-width: 575.97px) {
-
-  }
-`;
-
-const Labeltwo = styled.span`
-    font-weight: bold;
-    color: var(--quaternary-color);
-
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-
-  }
-
-
-  @media (max-width: 575.97px) {
-    /* font-size: 1.15rem; */
-
-  }
-`;
-
 const Labelthree = styled.span`
     font-style: oblique;
-    color: var(--quaternary-color);
-
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-
-  }
-
-
-  @media (max-width: 575.97px) {
-    /* font-size: 1.15rem; */
-
-  }
-`;
-
-const Labelfour = styled.span`
     color: var(--quaternary-color);
 
 
@@ -248,7 +180,7 @@ const Contfive = styled.div`
 
 const Resume = () => {
   return <>
-    <Resumesecc>
+    <Section>
       <div className="container">
         <div className="row">
           <div className="col-12 mb-4">
@@ -266,58 +198,15 @@ const Resume = () => {
           </div>
           <div className="col-12">
             <div className="row">
-              <div className="col-12 col-md-4 d-flex flex-column gap-3">
+              <div className="col-12 col-md-4">
                 <ResSecThree />
-                {/* <div className='education'>
-                  <Label>Education</Label>
-                  <Contwo>
-                    <Labeltwo>Universidad Veracruzana</Labeltwo>
-                    <Labelthree>Bachelor of Architecture</Labelthree>
-                    <Labelfour>2016 - 2021</Labelfour>
-                  </Contwo>
-                </div>
-                <div className='work-experience'>
-                  <Label>Work Experience</Label>
-                  <Contwo>
-                    <Labeltwo>Studio YG</Labeltwo>
-                    <Labelthree>Design Assistant</Labelthree>
-                    <Labelfour>2021 - 2021</Labelfour>
-                  </Contwo>
-                  <Contwo>
-                    <Labeltwo>BIOMASA</Labeltwo>
-                    <Labelthree>Administrative Leader</Labelthree>
-                    <Labelfour>2021 - 2023</Labelfour>
-                  </Contwo>
-                </div> */}
               </div>
-              <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <Contone>
-                  <div className='lenguages mt-3 mt-md-0 mt-lg-0 mt-xl-0'>
-                    <Label>Languages</Label>
-                    <Contwo>
-                      <Labeltwo>Spanish</Labeltwo>
-                      <Labelthree>Native</Labelthree>
-                    </Contwo>
-                    <Contwo>
-                      <Labeltwo>English</Labeltwo>
-                      <Labelthree>Intermediate</Labelthree>
-                    </Contwo>
-                  </div>
-                  <div className='skills'>
-                    <Label>Skills</Label>
-                    <Contwo>
-                      <Labelthree>Effective in client communication and fostering teamwork in diverse groups.</Labelthree>
-                      <Labelthree>Problem-solving.</Labelthree>
-                      <Labelthree>Punctuality.</Labelthree>
-                      <Labelthree>Commitment.</Labelthree>
-                      <Labelthree>Creativity.</Labelthree>
-                      <Labelthree>Leadership.</Labelthree>
-                    </Contwo>
-                  </div>
-                </Contone>
+              <div className="col-12 col-md-4">
+                <ResSecFour />
               </div>
-              <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <Contonedotone>
+              <div className="col-12 col-md-4">
+                <ResSecFive />
+                {/* <Contonedotone>
                   <Label>Software</Label>
                   <Conthree>
                     <Contfour>
@@ -355,13 +244,13 @@ const Resume = () => {
                       </Contfive>
                     </Contfour>
                   </Conthree>
-                </Contonedotone>
+                </Contonedotone> */}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </Resumesecc>
+    </Section>
   </>
 }
 
