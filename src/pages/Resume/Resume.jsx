@@ -8,6 +8,9 @@ import photoshop from '../../assets/images/icons/photoshop.png'
 import office from '../../assets/images/icons/office.png'
 import revit from '../../assets/images/icons/revit.png'
 
+
+import ResSecThree from './ResSecThree'
+
 const Resumesecc = styled.section`
   width: 100%;
   height: 97.5vh;
@@ -78,12 +81,9 @@ const Contone = styled.div`
 
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-
   }
 
-
   @media (max-width: 575.97px) {
-
   }
 `;
 
@@ -249,14 +249,14 @@ const Contfive = styled.div`
 const Resume = () => {
   return <>
     <Resumesecc>
-      <div className="container-md container-lg container-xl container-xxl">
+      <div className="container">
         <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+          <div className="col-12 mb-4">
             <div className="row">
-              <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div className="col-12 col-md-6">
                 <Persname>Evelin<br></br>Alvarado</Persname>
               </div>
-              <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div className="col-12 col-md-6">
                 <div className='d-flex flex-column align-items-end'>
                   <Email>arq.evelinalvarado@gmail.com</Email>
                   <Number>294 152 5765</Number>
@@ -264,32 +264,31 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div className="col-12">
             <div className="row">
-              <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <Contone>
-                  <div className='education'>
-                    <Label>Education</Label>
-                    <Contwo>
-                      <Labeltwo>Universidad Veracruzana</Labeltwo>
-                      <Labelthree>Bachelor of Architecture</Labelthree>
-                      <Labelfour>2016 - 2021</Labelfour>
-                    </Contwo>
-                  </div>
-                  <div className='work-experience'>
-                    <Label>Work Experience</Label>
-                    <Contwo>
-                      <Labeltwo>Studio YG</Labeltwo>
-                      <Labelthree>Design Assistant</Labelthree>
-                      <Labelfour>2021 - 2021</Labelfour>
-                    </Contwo>
-                    <Contwo>
-                      <Labeltwo>BIOMASA</Labeltwo>
-                      <Labelthree>Administrative Leader</Labelthree>
-                      <Labelfour>2021 - 2023</Labelfour>
-                    </Contwo>
-                  </div>
-                </Contone>
+              <div className="col-12 col-md-4 d-flex flex-column gap-3">
+                <ResSecThree />
+                {/* <div className='education'>
+                  <Label>Education</Label>
+                  <Contwo>
+                    <Labeltwo>Universidad Veracruzana</Labeltwo>
+                    <Labelthree>Bachelor of Architecture</Labelthree>
+                    <Labelfour>2016 - 2021</Labelfour>
+                  </Contwo>
+                </div>
+                <div className='work-experience'>
+                  <Label>Work Experience</Label>
+                  <Contwo>
+                    <Labeltwo>Studio YG</Labeltwo>
+                    <Labelthree>Design Assistant</Labelthree>
+                    <Labelfour>2021 - 2021</Labelfour>
+                  </Contwo>
+                  <Contwo>
+                    <Labeltwo>BIOMASA</Labeltwo>
+                    <Labelthree>Administrative Leader</Labelthree>
+                    <Labelfour>2021 - 2023</Labelfour>
+                  </Contwo>
+                </div> */}
               </div>
               <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <Contone>
