@@ -11,6 +11,8 @@ const Section = styled.section`
   background-color: var(--tertiary-color);
 
   @media (max-width: 575.97px) {
+    height: auto;
+    padding: 4rem 0;
   }
 `;
 
@@ -21,21 +23,24 @@ const Img = styled.img`
   0 1px 3px rgba(0, 0, 0, 0.08);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    max-width: 100%;
+    width: 100%;
   }
 
   @media (max-width: 575.97px) {
-    max-width: 100%;
+    width: 100%;
   }
 `;
 
 const Intro = styled.span`
-  font-size: 1.025rem;
+  font-size: 1.25rem;
   color: var(--quaternary-color);
 
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 1rem;
+  }
+
   @media (max-width: 575.97px) {
-    margin-top: 0.75rem;
-    text-align: justify;
+    text-align: center;
   }
 `;
 
@@ -44,6 +49,10 @@ const Icon = styled.a`
     font-size: 1.25rem;
     cursor: pointer;
     color: var(--quaternary-color);
+
+    @media (max-width: 575.97px) {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -51,16 +60,14 @@ const HomeSecTwo = () => {
   return <>
     <Section>
       <div className="container">
-        <div className="row">
-          <div className="col-12 col-md-7 col-lg-5 d-flex justify-content-center">
+        <div className="row gap-4 gap-md-0">
+          <div className="col-12 col-md-8 col-lg-5 d-flex justify-content-center">
             <Img src={Eve} alt="Me-img" />
           </div>
-          <div className="col-12 col-md-5 col-lg-7 d-flex justify-content-center align-items-end">
-            <div className='d-flex flex-column gap-3'>
-              <div className='d-flex flex-column gap-2'>
-                <Intro>I am an architect and interior designer passionate about creating inspiring and functional spaces.</Intro>
-                <Intro>My commitment to innovation and excellence constantly drives me to improve and stay updated on the latest trends in architecture and interior design.</Intro>
-              </div>
+          <div className="col-12 col-md-4 col-lg-7 d-flex justify-content-center align-items-end">
+            <div className='d-flex flex-column gap-3 align-items-center align-items-md-start'>
+              <Intro>I am an architect and interior designer passionate about creating inspiring and functional spaces.</Intro>
+              <Intro>My commitment to innovation and excellence constantly drives me to improve and stay updated on the latest trends in architecture and interior design.</Intro>
               <div className='d-flex gap-2'>
                 <Icon
                   target="_blank"

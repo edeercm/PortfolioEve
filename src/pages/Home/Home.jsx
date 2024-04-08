@@ -1,11 +1,11 @@
 import React from 'react'
-import HomeSecOne from './HomeSecOne';
-import HomeSecTwo from './HomeSecTwo';
+import HSecOne from './HSec1';
+import HSecTwo from './HSec2';
 
 const Home = () => {
   return <>
-  <HomeSecOne />
-  <HomeSecTwo />
+    <HSecOne />
+    <HSecTwo />
   </>
 }
 

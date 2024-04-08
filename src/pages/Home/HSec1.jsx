@@ -9,38 +9,35 @@ const Section = styled.section`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 575.97px) {
+  @media (max-width: 991.98px) {
+    text-align: center;
   }
 `;
 
-const Title = styled.h1`
+const Label = styled.h1`
   font-weight: 400;
-  line-height: 0.875;
-  font-size: 9.925rem;
+  line-height: 1;
+  font-size: 10rem;
   text-transform: uppercase;
   color: var(--secondary-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
-    font-size: 7.25rem;
+    font-size: 8.5rem;
   }
 
   @media (max-width: 575.97px) {
-    font-size: 3.25rem;
+    font-size: 4.25rem;
   }
   
 `;
 
-const Label = styled.span`
-  font-size: 1.275rem;
+const Desc = styled.span`
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--secondary-color);
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-  }
-
   @media (max-width: 575.97px) {
-    line-height: 1;
-    font-size: 0.785rem;
+    font-size: 0.75rem;
   }
 `;
 
@@ -48,8 +45,8 @@ const HomeSecOne = () => {
   return <>
     <Section>
       <div className='d-flex flex-column justify-content-center'>
-        <Title>Portfolio</Title>
-        <Label>Evelin Nohemi Alvarado Mendoza | Architect</Label>
+        <Label>Portfolio</Label>
+        <Desc>Evelin Nohemi Alvarado Mendoza | Architect</Desc>
       </div>
     </Section>
   </>
