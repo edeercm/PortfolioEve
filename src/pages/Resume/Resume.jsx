@@ -76,11 +76,11 @@ const Resume = () => {
               <div className="col-12 col-md-6">
                 <Persname>Evelin<br></br>Alvarado</Persname>
               </div>
-              <div className="col-12 col-md-6">
-                <div className='d-flex flex-column align-items-end'>
+              <div className="col-12 col-md-6 d-flex flex-column align-items-end">
+              
                   <Email>arq.evelinalvarado@gmail.com</Email>
                   <Number>294 152 5765</Number>
-                </div>
+             
               </div>
             </div>
           </div>
