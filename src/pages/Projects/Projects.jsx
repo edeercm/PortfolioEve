@@ -10,17 +10,22 @@ const Section = styled.section`
   display: flex;
   align-items: center;
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
     height: auto;
     padding: 10rem 0 7.5rem;
   }
 `
 
-const Label = styled.h3`
+const ProjsLabel = styled.h3`
   margin-bottom: 3rem;
   font-size: 4rem;
   letter-spacing: 0.75rem;
   color: var(--secondary-color);
+
+  @media (max-width: 575.98px) {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
 `
 
 const Title = styled.span`
@@ -48,10 +53,10 @@ const Projects = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
-            <Label>PROJECTS</Label>
+            <ProjsLabel>PROJECTS</ProjsLabel>
           </div>
           {projsData.map((project, index) => (
-            <div key={index} className='col-12 col-lg-3 d-flex flex-column text-center align-items-center mb-0 mb-md-5 mb-lg-0'>
+            <div key={index} className='col-12 col-lg-3 d-flex flex-column text-center align-items-center mb-5 mb-lg-0'>
               <Link to={project.link}>
                 <ProjImg project={project} index={index} />
               </Link>
