@@ -35,7 +35,7 @@ const Intro = styled.span`
   font-size: 1.25rem;
   color: var(--quaternary-color);
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
     font-size: 1rem;
   }
 
