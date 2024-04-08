@@ -9,10 +9,9 @@ import { Imgcont, Number, Title, Subtitle, Conthree, Label, Labeltwo, Contfour, 
 
 const SecOne = styled.section`
   width: 100%;
-  height: 105vh;
+  height: 100svh;
   display: flex;
   align-items: center;
-  background-color: var(--principal-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     height: auto;
@@ -64,10 +63,10 @@ const Contwo = styled.div`
   }
 `;
 
-const ProjOneSecOne = () => {
+const Proj1Sec1 = () => {
   return (
     <SecOne>
-      <div className="container-sm container-md container-lg container-xl container-xxl">
+      <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 gx-0 gx-lg-5 gx-xl-5">
             <Imgcont>
@@ -104,4 +103,4 @@ const ProjOneSecOne = () => {
   );
 };
 
-export default ProjOneSecOne
+export default Proj1Sec1

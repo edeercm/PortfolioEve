@@ -1,10 +1,8 @@
 import React from 'react'
-import SecOne from './ProjOneSecOne'
-import SecTwo from './ProjOneSecTwo'
-import SecThree from './ProjOneSecThree'
-import SecFour from './ProjOneSecFour'
-import SecFive from './ProjOneSecFive'
-import SecSix from './ProjOneSecSix'
+import SecOne from './Proj1Sec1'
+import SecTwo from './Proj1Sec2'
+import SecThree from './Proj1Sec3'
+import SecFour from './Proj1Sec4'
 import ProjectsNavigation from '../ProjectsNavigation'
 
 const ProjectOne = () => {
@@ -13,8 +11,6 @@ const ProjectOne = () => {
     <SecTwo />
     <SecThree />
     <SecFour />
-    <SecFive />
-    <SecSix />
     <ProjectsNavigation
       projects={[
         { path: '/ProjectOne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },

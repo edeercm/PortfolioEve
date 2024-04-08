@@ -8,33 +8,38 @@ const Section = styled.section`
   width: 100%;
   height: 97.2vh;
   display: flex;
-  text-align: center;
   align-items: center;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     height: auto;
-    padding: 10rem 0 7rem;
+    padding: 10rem 0 7.5rem;
   }
 `
 
 const Label = styled.h3`
-  margin-bottom: 2.5rem;
-  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  font-size: 4rem;
   letter-spacing: 0.75rem;
   color: var(--secondary-color);
 `
 
-const ProjName = styled.span`
+const Title = styled.span`
   font-weight: bold;
-  /* font-size: 0.95rem; */
   font-style: oblique;
   color: var(--quaternary-color);
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 1.5rem;
+  }
 `
 
-const ProjSubtitle = styled.span`
-  /* font-size: 0.85rem; */
+const Subtitle = styled.span`
   font-style: oblique;
   color: var(--quaternary-color);
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    font-size: 1.25rem;
+  }
 `
 
 const Projects = () => {
@@ -42,19 +47,17 @@ const Projects = () => {
     <Section>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 text-center">
             <Label>PROJECTS</Label>
           </div>
           {projsData.map((project, index) => (
-            <div key={index} className="col-12 col-lg-3">
-              <div className='d-flex flex-column align-items-center'>
-                <Link to={project.link}>
-                  <ProjImg project={project} index={index} />
-                </Link>
-                <div className='d-flex flex-column mt-4 gap-2'>
-                  <ProjName>{project.title}</ProjName>
-                  <ProjSubtitle>{project.subtitle}</ProjSubtitle>
-                </div>
+            <div key={index} className='col-12 col-lg-3 d-flex flex-column text-center align-items-center mb-0 mb-md-5 mb-lg-0'>
+              <Link to={project.link}>
+                <ProjImg project={project} index={index} />
+              </Link>
+              <div className='d-flex flex-column mt-4 gap-2'>
+                <Title>{project.title}</Title>
+                <Subtitle>{project.subtitle}</Subtitle>
               </div>
             </div>
           ))}

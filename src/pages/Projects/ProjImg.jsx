@@ -26,8 +26,8 @@ const ImgCont = styled.div`
 const Img = styled.img`
   width: 95%;
 
-  @media (min-width: 575.98px) and (max-width: 767.98px) {
-    width: 50%;
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 70%;
   }
 `
 
