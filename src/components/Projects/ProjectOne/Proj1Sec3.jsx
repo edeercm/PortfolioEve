@@ -6,7 +6,7 @@ import { Label } from './Proj1GlobalStls';
 
 const SecThree = styled.section`
   width: 100%;
-  height: 100svh;
+  height: 100vh;
   display: flex;
   align-items: center;
 
@@ -17,7 +17,7 @@ const SecThree = styled.section`
 
   @media (max-width: 575.98px) {
     height: auto;
-    padding: 1.75rem 0;
+    padding: 2.5rem 0;
   }
 `;
 
@@ -28,7 +28,7 @@ const ImgCont = styled.div`
   text-align: end;
   gap: 0.5rem;
   
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
     width: 100%;
   }
 `;

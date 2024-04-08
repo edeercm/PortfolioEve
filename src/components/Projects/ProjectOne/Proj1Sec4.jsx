@@ -9,14 +9,9 @@ const SecFour = styled.section`
   display: flex;
   align-items: center;
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
     height: auto;
-    padding: 0 0 5rem;
-  }
-
-  @media (max-width: 575.98px) {
-    height: auto;
-    padding: 0 0 3.5rem;
+    padding: 0 0 1.25rem;
   }
 `;
 
@@ -27,11 +22,8 @@ const ImgCont = styled.div`
   text-align: end;
   gap: 0.5rem;
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
     width: 100%;
-  }
-
-  @media (max-width: 575.98px) {
   }
 `;
 
