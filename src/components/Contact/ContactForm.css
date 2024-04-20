@@ -33,7 +33,7 @@
     resize: none;
 }
 
-.contact-btn {
+/* .contact-btn {
     width: 6rem;
     height: 2rem;
     border: none;
@@ -52,12 +52,12 @@
 .contact-btn:hover {
     color: var(--secondary-color);
     background-color: var(--principal-color);
-    transition: all 0.3s ease-out; /* Transición suave */
+    transition: all 0.3s ease-out;
 }
 
 .contact-btn-disabled {
     cursor: not-allowed;
-}
+} */
 
 
 
