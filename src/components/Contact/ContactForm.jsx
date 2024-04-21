@@ -107,7 +107,7 @@ const ContactForm = () => {
           {...register("message", { required: true })}
           // {...register("message", { required: true, minLength: 15, maxLength: 50 })}
           onBlur={() => handleBlur("message")}
-          className={`form-control text-area ${errors.message ? 'is-invalid' : ''}`}
+          className={`form-control ${errors.message ? 'is-invalid' : ''}`}
         />
       </Form>
       <SubmitBtn
