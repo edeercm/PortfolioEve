@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const About = styled.span`
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: var(--quaternary-color);
 
   @media (max-width: 991.98px) {
