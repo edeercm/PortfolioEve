@@ -41,7 +41,7 @@ const Desc = styled.span`
   }
 `;
 
-const HomeSecOne = () => {
+const HSecOne = () => {
   return <>
     <Section>
       <div className='d-flex flex-column justify-content-center'>
@@ -52,4 +52,4 @@ const HomeSecOne = () => {
   </>
 }
 
-export default HomeSecOne
+export default HSecOne
