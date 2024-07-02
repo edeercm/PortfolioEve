@@ -1,9 +1,41 @@
 import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
-import projsData from './projsData';
 import ProjImg from './ProjImg';
+// Datos de proyectos
+import project1 from '../../assets/images/projects/1.png';
+import project2 from '../../assets/images/projects/2.png';
+import project3 from '../../assets/images/projects/3.png';
+import project4 from '../../assets/images/projects/4.png';
 
+const projsData = [
+  {
+    image: project1,
+    link: '/ProjectOne',
+    title: <>CENTRO MULTIFUNCIONAL<br />Y MEMORIAL DE SITIO</>,
+    subtitle: 'COMUNITARIA 28',
+  },
+  {
+    image: project2,
+    link: '/ProjectTwo',
+    title: 'REMODELACIÓN COMEDOR',
+    subtitle: 'STUDIO YG',
+  },
+  {
+    image: project3,
+    link: '/ProjectThree',
+    title: 'LUNA Y MAR SPA',
+    subtitle: 'INTERIOR DESIGN',
+  },
+  {
+    image: project4,
+    link: '/FurnitureProjects',
+    title: 'FURNITURE',
+    subtitle: 'PERSONAL CREATIONS',
+  }
+];
+
+// Estilos
 const Section = styled.section`
   width: 100%;
   height: 97.2vh;
@@ -14,7 +46,7 @@ const Section = styled.section`
     height: auto;
     padding: 10rem 0 7.5rem;
   }
-`
+`;
 
 const ProjsLabel = styled.h3`
   margin-bottom: 3rem;
@@ -26,7 +58,7 @@ const ProjsLabel = styled.h3`
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
   }
-`
+`;
 
 const Title = styled.span`
   font-weight: bold;
@@ -36,7 +68,7 @@ const Title = styled.span`
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     font-size: 1.5rem;
   }
-`
+`;
 
 const Subtitle = styled.span`
   font-style: oblique;
@@ -45,7 +77,7 @@ const Subtitle = styled.span`
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     font-size: 1.25rem;
   }
-`
+`;
 
 const Projects = () => {
   return (
@@ -69,7 +101,8 @@ const Projects = () => {
         </div>
       </div>
     </Section>
-  )
+  );
 }
 
 export default Projects;
+
