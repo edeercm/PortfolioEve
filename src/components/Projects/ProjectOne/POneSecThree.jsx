@@ -1,15 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
+import { GlobalSection } from './POneGlobStyles';
+import { Label } from './Proj1GlobalStls';
 import imgone from '../../../assets/images/projectone/five.jpg'
 import imgtwo from '../../../assets/images/projectone/five01.jpg'
-import { Label } from './Proj1GlobalStls';
 
-const SecThree = styled.section`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-
+const Section = styled(GlobalSection)` // Extender el estilo base
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     height: auto;
     padding: 0 0 5rem;
@@ -33,9 +29,9 @@ const ImgCont = styled.div`
   }
 `;
 
-const Proj1Sec3 = () => {
+const POneSecThree = () => {
   return (
-    <SecThree>
+    <Section>
       <div className="container">
         <div className="row gap-5 gap-lg-0">
           <div className="col-12 col-lg-6 d-flex justify-content-center">
@@ -52,8 +48,8 @@ const Proj1Sec3 = () => {
           </div>
         </div>
       </div>
-    </SecThree>
+    </Section>
   );
 };
 
-export default Proj1Sec3 
+export default POneSecThree 

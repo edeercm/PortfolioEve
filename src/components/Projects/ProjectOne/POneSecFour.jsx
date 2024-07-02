@@ -1,14 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import six from '../../../assets/images/projectone/six.png';
+import { GlobalSection } from './POneGlobStyles';
 import { Label } from './Proj1GlobalStls';
+import six from '../../../assets/images/projectone/six.png';
 
-const SecFour = styled.section`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-
+const Section = styled(GlobalSection)` // Extender el estilo base
   @media (max-width: 991.98px) {
     height: auto;
     padding: 0 0 1.25rem;
@@ -27,9 +23,9 @@ const ImgCont = styled.div`
   }
 `;
 
-const Proj1Sec4 = () => {
+const POneSectFour = () => {
   return (
-    <SecFour>
+    <Section>
       <div className="container">
         <div className="row">
           <div className="col-12 d-flex justify-content-center">
@@ -40,9 +36,9 @@ const Proj1Sec4 = () => {
           </div>
         </div>
       </div>
-    </SecFour>
+    </Section>
   );
 };
 
-export default Proj1Sec4;
+export default POneSectFour;
 

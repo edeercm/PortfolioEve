@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import autocad from '../../../assets/images/icons/autocad.png'
-import sketchup from '../../../assets/images/icons/sketchup.png'
-import vray from '../../../assets/images/icons/vray.png'
-import photoshop from '../../../assets/images/icons/photoshop.png'
-import { DescLabel, DescCont, Desc, IconsCont, DesignedLabel, Icon } from '../Sec1GlobalStls';
+import autocad from '../../../../assets/images/icons/autocad.png'
+import sketchup from '../../../../assets/images/icons/sketchup.png'
+import vray from '../../../../assets/images/icons/vray.png'
+import photoshop from '../../../../assets/images/icons/photoshop.png'
+import { DescLabel, DescCont, Desc, IconsCont, DesignedLabel, Icon } from '../../Sec1GlobalStls';
 
 const Container = styled.div`
   width: 90%;
@@ -22,7 +22,7 @@ const Container = styled.div`
   }
 `;
 
-const Sec1Desc = () => {
+const POneInfo = () => {
   return <>
     <Container>
       <DescLabel>Description</DescLabel>
@@ -44,4 +44,4 @@ const Sec1Desc = () => {
   </>
 }
 
-export default Sec1Desc
+export default POneInfo

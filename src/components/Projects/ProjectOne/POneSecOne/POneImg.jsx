@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import projone from '../../../assets/images/projectone/one.jpg'
-import { Number, Title, Subtitle } from '../Sec1GlobalStls';
+import projone from '../../../../assets/images/projectone/one.jpg'
+import { Number, Title, Subtitle } from '../../Sec1GlobalStls';
 
 const NameCont = styled.div`
   position: absolute;

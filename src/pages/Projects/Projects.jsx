@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import ProjImg from './ProjImg';
-// Datos de proyectos
 import project1 from '../../assets/images/projects/1.png';
 import project2 from '../../assets/images/projects/2.png';
 import project3 from '../../assets/images/projects/3.png';
@@ -35,7 +34,6 @@ const projsData = [
   }
 ];
 
-// Estilos
 const Section = styled.section`
   width: 100%;
   height: 97.2vh;
