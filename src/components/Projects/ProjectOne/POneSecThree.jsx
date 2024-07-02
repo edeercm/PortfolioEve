@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { GlobalSection } from './POneGlobStyles';
-import { Label } from './Proj1GlobalStls';
+import { GlobalSection, Label } from './POneGlobStyles';
 import imgone from '../../../assets/images/projectone/five.jpg'
 import imgtwo from '../../../assets/images/projectone/five01.jpg'
 

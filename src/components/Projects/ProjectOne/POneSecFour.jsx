@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { GlobalSection } from './POneGlobStyles';
-import { Label } from './Proj1GlobalStls';
+import { GlobalSection, Label } from './POneGlobStyles';
 import six from '../../../assets/images/projectone/six.png';
 
 const Section = styled(GlobalSection)` // Extender el estilo base
