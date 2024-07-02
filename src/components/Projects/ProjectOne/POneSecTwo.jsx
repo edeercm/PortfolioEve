@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import four from '../../../assets/images/projectone/four.jpg';
+import { two } from './POneImages';
 import { GlobalSection, Label } from './POneGlobStyles';
 
 const Section = styled(GlobalSection)` // Extender el estilo base
@@ -33,7 +33,7 @@ const POneSecTwo = () => {
         <div className="row">
           <div className="col-12 d-flex justify-content-center">
             <ImgCont>
-              <img src={four} alt="Render four" />
+              <img src={two} alt="Render two" />
               <Label>Floor plan view</Label>
             </ImgCont>
           </div>

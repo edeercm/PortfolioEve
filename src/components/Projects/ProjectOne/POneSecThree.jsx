@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { GlobalSection, Label } from './POneGlobStyles';
-import imgone from '../../../assets/images/projectone/five.jpg'
-import imgtwo from '../../../assets/images/projectone/five01.jpg'
+import { three, four } from './POneImages';
 
 const Section = styled(GlobalSection)` // Extender el estilo base
   @media (min-width: 575.98px) and (max-width: 991.98px) {
@@ -35,13 +34,13 @@ const POneSecThree = () => {
         <div className="row gap-5 gap-lg-0">
           <div className="col-12 col-lg-6 d-flex justify-content-center">
             <ImgCont>
-              <img src={imgone} alt="Render" />
+              <img src={three} alt="Render" />
               <Label>Interior view of central courtyard</Label>
             </ImgCont>
           </div>
           <div className="col-12 col-lg-6 d-flex justify-content-center">
             <ImgCont>
-              <img src={imgtwo} alt="Render" />
+              <img src={four} alt="Render" />
               <Label>Interior view of central courtyard</Label>
             </ImgCont>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { GlobalSection, Label } from './POneGlobStyles';
-import six from '../../../assets/images/projectone/six.png';
+import { five } from './POneImages';
 
 const Section = styled(GlobalSection)` // Extender el estilo base
   @media (max-width: 991.98px) {
@@ -29,7 +29,7 @@ const POneSectFour = () => {
         <div className="row">
           <div className="col-12 d-flex justify-content-center">
             <ImgCont>
-              <img src={six} alt="Render" />
+              <img src={five} alt="Render" />
               <Label>Interior view of workshop</Label>
             </ImgCont>
           </div>
