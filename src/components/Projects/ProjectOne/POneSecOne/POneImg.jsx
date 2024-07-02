@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import projone from '../../../../assets/images/projectone/one.jpg'
+import { one } from '../POneImages';
 import { Number, Title, Subtitle } from '../../Sec1GlobalStls';
 
 const NameCont = styled.div`
@@ -18,7 +18,7 @@ const NameCont = styled.div`
 const Sec1Img = () => {
   return <>
     <div className='position-relative'>
-      <img src={projone} alt="Proj one" className='w-100' />
+      <img src={one} alt="Render one" className='w-100' />
       <NameCont>
         <Number>01</Number>
         <Title>CENTRO MULTIFUNCIONAL Y MEMORIAL DE SITIO:</Title>

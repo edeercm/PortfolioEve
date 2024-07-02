@@ -34,13 +34,13 @@ const POneSecThree = () => {
         <div className="row gap-5 gap-lg-0">
           <div className="col-12 col-lg-6 d-flex justify-content-center">
             <ImgCont>
-              <img src={three} alt="Render" />
+              <img src={three} alt="Render three" />
               <Label>Interior view of central courtyard</Label>
             </ImgCont>
           </div>
           <div className="col-12 col-lg-6 d-flex justify-content-center">
             <ImgCont>
-              <img src={four} alt="Render" />
+              <img src={four} alt="Render four" />
               <Label>Interior view of central courtyard</Label>
             </ImgCont>
           </div>

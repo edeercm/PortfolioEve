@@ -29,7 +29,7 @@ const POneSectFour = () => {
         <div className="row">
           <div className="col-12 d-flex justify-content-center">
             <ImgCont>
-              <img src={five} alt="Render" />
+              <img src={five} alt="Render five" />
               <Label>Interior view of workshop</Label>
             </ImgCont>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import { two } from './POneImages';
 import { GlobalSection, Label } from './POneGlobStyles';
+import { two } from './POneImages';
 
 const Section = styled(GlobalSection)` // Extender el estilo base
  @media (min-width: 575.98px) and (max-width: 991.98px) {
