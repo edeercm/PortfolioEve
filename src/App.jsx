@@ -3,7 +3,7 @@ import Layout from './components/Layout/Layout'
 import Home from './pages/Home'
 import Resume from './pages/Resume'
 import Projects from './pages/Projects/Projects'
-import ProjectOne from './components/Projects/ProjectOne/ProjectOne'
+import POne from './components/Projects/ProjectOne/POne'
 import ProjectTwo from './components/Projects/ProjectTwo/ProjectTwo'
 import ProjectThree from './components/Projects/ProjectThree/ProjectThree'
 import FurnitureProjects from './components/Projects/FurnitureProjects/FurnitureProjects'
@@ -19,7 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='Resume' element={<Resume />} />
           <Route path='Projects' element={<Projects />} />
-          <Route path='ProjectOne' element={<ProjectOne />} />
+          <Route path='POne' element={<POne />} />
           <Route path='ProjectTwo' element={<ProjectTwo />} />
           <Route path='ProjectThree' element={<ProjectThree />} />
           <Route path='FurnitureProjects' element={<FurnitureProjects />} />

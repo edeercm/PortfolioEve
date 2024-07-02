@@ -5,7 +5,7 @@ import POneSecThree from './POneSecThree'
 import POneSecFour from './POneSecFour'
 import ProjectsNavigation from '../ProjectsNavigation'
 
-const ProjectOne = () => {
+const POne = () => {
   return <>
     <POneSecOne />
     <POneSecTwo />
@@ -23,4 +23,4 @@ const ProjectOne = () => {
   </>
 }
 
-export default ProjectOne
+export default POne

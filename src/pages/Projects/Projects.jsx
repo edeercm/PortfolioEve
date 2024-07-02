@@ -10,7 +10,7 @@ import project4 from '../../assets/images/projects/4.png';
 const projsData = [
   {
     image: project1,
-    link: '/ProjectOne',
+    link: '/POne',
     title: <>CENTRO MULTIFUNCIONAL<br />Y MEMORIAL DE SITIO</>,
     subtitle: 'COMUNITARIA 28',
   },
