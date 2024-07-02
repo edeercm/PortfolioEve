@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import Home from './pages/Home'
-import Resume from './pages/Resume/Resume'
+import Resume from './pages/Resume'
 import Projects from './pages/Projects/Projects'
 import ProjectOne from './components/Projects/ProjectOne/ProjectOne'
 import ProjectTwo from './components/Projects/ProjectTwo/ProjectTwo'

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import ResSecThree from './ResSecThree'
-import ResSecFour from './ResSecFour'
-import ResSecFive from './ResSecFive'
+import ResSecThree from '../components/Resume/ResSecThree'
+import ResSecFour from '../components/Resume/ResSecFour'
+import ResSecFive from '../components/Resume/ResSecFive'
 
 const Section = styled.section`
   width: 100%;
@@ -20,7 +20,7 @@ const Section = styled.section`
   }
 `;
 
-const Persname = styled.h1`
+const Name = styled.h1`
   line-height: 1;
   font-size: 3.925rem;
   text-transform: uppercase;
@@ -74,7 +74,7 @@ const Resume = () => {
           <div className="col-12">
             <div className="row">
               <div className="col-12 col-md-6">
-                <Persname>Evelin<br></br>Alvarado</Persname>
+                <Name>Evelin<br></br>Alvarado</Name>
               </div>
               <div className="col-12 col-md-6 d-flex flex-column align-items-end">
                 <Email>arq.evelinalvarado@gmail.com</Email>
