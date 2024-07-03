@@ -13,7 +13,7 @@ const POne = () => {
     <POneSecFour />
     <ProjectsNavigation
       projects={[
-        { path: '/ProjectOne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },
+        { path: '/POne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },
         { path: '/ProjectTwo', name: 'Remodelación Comedor Studio YG' },
         { path: '/ProjectThree', name: 'Luna y Mar Spa Interior Design' },
         { path: '/FurnitureProjects', name: 'Furniture - Personal Creations' }
