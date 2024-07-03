@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Section, ProjsLabel, Title, Subtitle, ImgLabel, ImgCont, Img } from './ProjectsStyles';
+import { Section, ProjectsLabel, ImgCont, Img, ImgLabel, Title, Subtitle } from './ProjectsStyles';
 import projectsData from './ProjectsData';
 
 const Projects = () => {
@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
-            <ProjsLabel>PROJECTS</ProjsLabel>
+            <ProjectsLabel>PROJECTS</ProjectsLabel>
           </div>
           {projectsData.map((project, index) => (
             <div key={index} className='col-12 col-lg-3 d-flex flex-column text-center align-items-center mb-5 mb-lg-0'>

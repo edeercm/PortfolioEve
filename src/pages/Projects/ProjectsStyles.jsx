@@ -12,7 +12,7 @@ export const Section = styled.section`
   }
 `;
 
-export const ProjsLabel = styled.h3`
+export const ProjectsLabel = styled.h3`
   margin-bottom: 3rem;
   font-size: 4rem;
   letter-spacing: 0.75rem;
@@ -23,6 +23,37 @@ export const ProjsLabel = styled.h3`
     letter-spacing: 0.5rem;
   }
 `;
+
+export const ImgLabel = styled.span`
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  color: var(--quaternary-color);
+  background-color: var(--quinary-color);
+  transition: opacity 0.4s ease-in;
+`
+
+export const ImgCont = styled.div`
+  position: relative;
+
+  &:hover ${ImgLabel} {
+    opacity: 1;
+    visibility: visible;
+  }
+`;
+
+export const Img = styled.img`
+  width: 95%;
+
+  @media (min-width: 575.98px) and (max-width: 991.98px) {
+    width: 70%;
+  }
+`
 
 export const Title = styled.span`
   font-weight: bold;
@@ -43,33 +74,4 @@ export const Subtitle = styled.span`
   }
 `;
 
-export const ImgLabel = styled.span`
-  visibility: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  font-size: 1.5rem;
-  padding: 0 0.5rem;
-  background-color: white;
-  transition: opacity 0.4s ease-in;
-`
-
-export const ImgCont = styled.div`
-  position: relative;
-
-  &:hover ${ImgLabel} {
-    opacity: 1;
-    visibility: visible;
-  }
-`;
-
-export const Img = styled.img`
-  width: 95%;
-
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    width: 70%;
-  }
-`
 
