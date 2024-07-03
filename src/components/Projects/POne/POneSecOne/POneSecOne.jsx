@@ -24,7 +24,7 @@ const POneSecOne = () => {
           <div className="col-12 col-lg-6">
             <POneImg />
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 ">
             <POneInfo />
           </div>
         </div>

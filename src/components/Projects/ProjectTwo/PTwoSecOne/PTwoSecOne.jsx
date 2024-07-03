@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-// import POneImg from './POneImg';
+import PTwoImg from './PTwoImg';
 import PTwoInfo from './PTwoInfo';
 import { GlobalSection } from '../../Sec1GlobalStls';
 
@@ -22,9 +22,9 @@ const PTwoSecOne = () => {
       <div className="container">
         <div className="row gap-4 gap-md-5 gap-lg-0">
           <div className="col-12 col-lg-6">
-            {/* <PTwoImg /> */}
+            <PTwoImg />
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 d-flex align-items-center">
             <PTwoInfo />
           </div>
         </div>

@@ -11,6 +11,8 @@ import poneimgtwo from '../../assets/images/projectone/two.jpg';
 import poneimgthree from '../../assets/images/projectone/three.jpg'
 import poneumgfour from '../../assets/images/projectone/four.jpg'
 import poneimgfive from '../../assets/images/projectone/five.png';
+//---> Project Two
+import ptwoimgone from '../../assets/images/projectwo/one.png'
 
 const pSecOneData = {
   label: 'Description',
@@ -36,10 +38,10 @@ const pSecOneData = {
   ],
   projectTwo: [
     {
-      imgOne: poneimgone,
-      number: '01',
-      name: 'CENTRO MULTIFUNCIONAL Y MEMORIAL DE SITIO:',
-      subtitle: 'COMUNITARIA 28',
+      imgOne: ptwoimgone,
+      number: '02',
+      name: 'RESTYLING',
+      subtitle: 'KITCHEN/DINING AREA',
       descOne: 'The remodeling of the kitchen/dining area for employees at Studio YG represented an exciting transformation project. Initially, it was a warehouse; the space has been reinvented to offer a functional and welcoming environment for team members.',
       descTwo: 'Recognizing the importance of personal space for our employees, a dressing room with customized lockers was created.',
       descThree: 'To maximize resources and reduce waste, the decision was made to reuse existing furniture whenever possible. Through smart reconfiguration, some existing tables were retained in the outdoor area."',
