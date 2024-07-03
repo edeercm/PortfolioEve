@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { one } from '../POneImages';
+import pSecOneData from '../../PSecOneData';
 import { Number, Title, Subtitle } from '../../Sec1GlobalStls';
 
 const NameCont = styled.div`
@@ -16,14 +16,20 @@ const NameCont = styled.div`
 `;
 
 const Sec1Img = () => {
+  const { projectOne } = pSecOneData;
+
   return <>
     <div className='position-relative'>
-      <img src={one} alt="Render one" className='w-100' />
-      <NameCont>
-        <Number>01</Number>
-        <Title>CENTRO MULTIFUNCIONAL Y MEMORIAL DE SITIO:</Title>
-        <Subtitle>COMUNITARIA 28</Subtitle>
-      </NameCont>
+    {projectOne.map((project, index) => (
+        <React.Fragment key={index}>
+          <img src={project.imgOne} alt='Render one' className='w-100' />
+          <NameCont>
+            <Number>{project.number}</Number>
+            <Title>{project.name}</Title>
+            <Subtitle>{project.subtitle}</Subtitle>
+          </NameCont>
+        </React.Fragment>
+      ))}
     </div>
   </>
 }

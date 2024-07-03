@@ -1,5 +1,7 @@
 import React from 'react'
 import SecOne from './ProjTwoSecOne'
+
+import PTwoSecOne from '../ProjectTwo/PTwoSecOne/PTwoSecOne'
 import SecTwo from './ProjTwoSecTwo'
 import SecThree from './ProjTwoSecThree'
 import SecFour from './ProjTwoSecFour'
@@ -7,7 +9,7 @@ import ProjectsNavigation from '../ProjectsNavigation'
 
 const ProjectTwo = () => {
   return <>
-    <SecOne />
+    <PTwoSecOne />
     <SecTwo />
     <SecThree />
     <SecFour />

@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const GlobalSection = styled.section`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+`;
+
 export const Number = styled.h3`
   font-size: 3rem;
   color: var(--quaternary-color);
@@ -61,7 +68,8 @@ export const DescCont = styled.div`
 `;
 
 export const Desc = styled.span`
-  font-size: 0.875rem;
+  text-align: justify;
+  font-size: 0.885rem;
   color: var(--quaternary-color);
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {

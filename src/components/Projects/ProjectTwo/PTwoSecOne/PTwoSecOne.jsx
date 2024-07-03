@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import POneImg from './POneImg';
-import POneInfo from './POneInfo';
+// import POneImg from './POneImg';
+import PTwoInfo from './PTwoInfo';
 import { GlobalSection } from '../../Sec1GlobalStls';
 
 const Section = styled(GlobalSection)` // Extender el estilo base
@@ -16,16 +16,16 @@ const Section = styled(GlobalSection)` // Extender el estilo base
   }
 `;
 
-const POneSecOne = () => {
+const PTwoSecOne = () => {
   return (
     <Section>
       <div className="container">
         <div className="row gap-4 gap-md-5 gap-lg-0">
           <div className="col-12 col-lg-6">
-            <POneImg />
+            {/* <PTwoImg /> */}
           </div>
           <div className="col-12 col-lg-6">
-            <POneInfo />
+            <PTwoInfo />
           </div>
         </div>
       </div>
@@ -33,4 +33,4 @@ const POneSecOne = () => {
   )
 }
 
-export default POneSecOne
+export default PTwoSecOne

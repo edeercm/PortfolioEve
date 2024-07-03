@@ -2,8 +2,8 @@ import React from 'react'
 import { DescLabel, Desc, IconsCont, DesignedLabel, Icon } from '../../Sec1GlobalStls';
 import pSecOneData from '../../PSecOneData';
 
-const POneInfo = () => {
-  const { label, projectOne, designedLabel, autocadIcon, sketchupIcon, vrayIcon, photoshopIcon } = pSecOneData;
+const PTwoInfo = () => {
+  const { label, projectTwo, designedLabel, autocadIcon, sketchupIcon, vrayIcon, photoshopIcon } = pSecOneData;
 
   return (
     <div className="row p-1 p-lg-5 gap-4 gap-lg-3">
@@ -11,7 +11,7 @@ const POneInfo = () => {
         <DescLabel>{label}</DescLabel>
       </div>
       <div className="col-12 d-flex flex-column gap-3 gap-lg-2">
-        {projectOne.map((desc, index) => (
+        {projectTwo.map((desc, index) => (
           <React.Fragment key={index}>
             <Desc>{desc.descOne}</Desc>
             <Desc>{desc.descTwo}</Desc>
@@ -34,4 +34,4 @@ const POneInfo = () => {
   )
 }
 
-export default POneInfo
+export default PTwoInfo

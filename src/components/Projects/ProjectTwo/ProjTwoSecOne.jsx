@@ -1,76 +1,72 @@
 import React from 'react'
 import styled from 'styled-components';
 import one from '../../../assets/images/projectwo/one.png'
-import autocad from '../../../assets/images/icons/autocad.png'
-import sketchup from '../../../assets/images/icons/sketchup.png'
-import vray from '../../../assets/images/icons/vray.png'
-import photoshop from '../../../assets/images/icons/photoshop.png'
 import { Imgcont, Number, Title, Subtitle, Conthree, Label, Labeltwo, Contfour, Labelthree, Icon } from '../SecOneGlobalStyles';
 
 const SecOne = styled.section`
-  width: 100%;
-  height: 105vh;
-  display: flex;
-  align-items: center;
-  background-color: var(--principal-color);
+   width: 100%;
+   height: 105vh;
+   display: flex;
+   align-items: center;
+   background-color: var(--principal-color);
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    height: auto;
-    padding: 6.5rem 0;
-  }
+   @media (min-width: 575.98px) and (max-width: 991.98px) {
+     height: auto;
+     padding: 6.5rem 0;
+   }
 
-  @media (max-width: 575.98px) {
-    height: auto;
-    padding: 2rem 0;
-  }
-`;
+   @media (max-width: 575.98px) {
+     height: auto;
+     padding: 2rem 0;
+   }
+ `;
 
 const Img = styled.img`
-  width: 100%;
-  height: 80vh;
-  object-fit: contain;
-  object-position: center;
-  
-  @media (max-width: 575.98px) {
-    
-  }
-`;
+   width: 100%;
+   height: 80vh;
+   object-fit: contain;
+   object-position: center;
+
+   @media (max-width: 575.98px) {
+
+   }
+ `;
 
 const Namecont = styled.div`
-  position: absolute;
-  right: -2rem;
-  bottom: -2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+   position: absolute;
+   right: -2rem;
+   bottom: -2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: end;
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    right: 1.5rem;
-    bottom: -3rem;
-  }
+   @media (min-width: 575.98px) and (max-width: 991.98px) {
+     right: 1.5rem;
+     bottom: -3rem;
+   }
 
-  @media (max-width: 575.98px) {
-    right: 0;
-    bottom: 1rem;
-  }
-`;
+   @media (max-width: 575.98px) {
+     right: 0;
+     bottom: 1rem;
+   }
+ `;
 
 const Contwo = styled.div`
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+   width: 85%;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
 
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    margin-top: 3.75rem;
-    width: 90%;
-  }
+   @media (min-width: 575.98px) and (max-width: 991.98px) {
+     margin-top: 3.75rem;
+     width: 90%;
+   }
 
-  @media (max-width: 575.98px) {
-    margin-top: 1rem;
-    width: 95%;
-  }
-`;
+   @media (max-width: 575.98px) {
+     margin-top: 1rem;
+     width: 95%;
+   }
+ `;
 
 const ProjTwoSecOne = () => {
   return (
@@ -87,7 +83,10 @@ const ProjTwoSecOne = () => {
               </Namecont>
             </Imgcont>
           </div>
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center justify-content-md-center justify-content-lg-center justify-content-xl-center align-items-center">
+          <div className="col-12 col-lg-6">
+            <PTwoInfo />
+          </div>
+          {/* <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center justify-content-md-center justify-content-lg-center justify-content-xl-center align-items-center">
             <Contwo>
               <Conthree>
                 <Label>Description</Label>
@@ -105,7 +104,7 @@ const ProjTwoSecOne = () => {
                 </div>
               </Contfour>
             </Contwo>
-          </div>
+          </div> */}
         </div>
       </div>
     </SecOne>
