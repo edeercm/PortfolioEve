@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import pSecOneData from '../../PSecOneData';
-import { Number, Title, Subtitle } from '../../Sec1GlobalStls';
+import { Number, Title, Subtitle } from '../../PSecOneStyles';
 
 const Img = styled.img`
   width: 100%;

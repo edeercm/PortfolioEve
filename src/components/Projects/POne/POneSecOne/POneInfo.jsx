@@ -1,5 +1,5 @@
 import React from 'react'
-import { DescLabel, Desc, IconsCont, DesignedLabel, Icon } from '../../Sec1GlobalStls';
+import { DescLabel, Desc, IconsCont, DesignedLabel, Icon } from '../../PSecOneStyles';
 import pSecOneData from '../../PSecOneData';
 
 const POneInfo = () => {
