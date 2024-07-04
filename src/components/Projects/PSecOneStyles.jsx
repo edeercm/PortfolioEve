@@ -113,3 +113,4 @@ export const Icon = styled.img`
     width: 4.5rem;
   }
 `;
+

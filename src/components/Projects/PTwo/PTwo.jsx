@@ -5,7 +5,7 @@ import SecThree from './ProjTwoSecThree'
 import SecFour from './ProjTwoSecFour'
 import ProjectsNavigation from '../ProjectsNavigation'
 
-const ProjectTwo = () => {
+const PTwo = () => {
   return <>
     <PTwoSecOne />
     <SecTwo />
@@ -23,4 +23,4 @@ const ProjectTwo = () => {
   </>
 }
 
-export default ProjectTwo
+export default PTwo

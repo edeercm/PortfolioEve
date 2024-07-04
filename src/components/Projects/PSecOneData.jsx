@@ -1,22 +1,23 @@
-// ICONS
+// PROJECT ICONS //
 import autocad from '../../assets/images/icons/autocad.png'
 import sketchup from '../../assets/images/icons/sketchup.png'
 import vray from '../../assets/images/icons/vray.png'
 import photoshop from '../../assets/images/icons/photoshop.png'
 
-// PROJECT IMAGES
-//---> Project One
+// PROJECT IMAGES //
+//-> Project One <-//
 import poneimgone from '../../assets/images/projectone/one.jpg'
 import poneimgtwo from '../../assets/images/projectone/two.jpg';
 import poneimgthree from '../../assets/images/projectone/three.jpg'
 import poneumgfour from '../../assets/images/projectone/four.jpg'
 import poneimgfive from '../../assets/images/projectone/five.png';
-//---> Project Two
+//-> Project Two <-//
 import ptwoimgone from '../../assets/images/projectwo/one.png'
-//---> Project Three
+//-> Project Three  <-//
 import pthreeimgone from '../../assets/images/projecthree/one.png'
 
-const pSecOneData = {
+
+const PSecOneData = {
   label: 'Description',
   designedLabel: 'Designed with',
   autocadIcon: autocad,
@@ -24,7 +25,7 @@ const pSecOneData = {
   vrayIcon: vray,
   photoshopIcon: photoshop,
   projectOne: [
-    {
+    { 
       imgOne: poneimgone,
       number: '01',
       name: 'CENTRO MULTIFUNCIONAL Y MEMORIAL DE SITIO:',
@@ -62,4 +63,4 @@ const pSecOneData = {
 
 };
 
-export default pSecOneData;
+export default PSecOneData;
