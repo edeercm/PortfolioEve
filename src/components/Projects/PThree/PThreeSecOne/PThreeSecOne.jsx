@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import PThreeImg from './PThreeImg';
 import PThreeInfo from './PThreeInfo';
-import { GlobalSection } from '../../Sec1GlobalStls';
+import { GlobalSection } from '../../PSecOneStyles';
 
 const Section = styled(GlobalSection)` // Extender el estilo base
  @media (min-width: 575.98px) and (max-width: 991.98px) {
