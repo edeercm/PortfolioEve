@@ -16,11 +16,11 @@ const Img = styled.img`
 
 const NameCont = styled.div`
   position: absolute;
-  right: -2rem;
-  bottom: -2rem;
   display: flex;
   flex-direction: column;
   align-items: end;
+  right: -2rem;
+  bottom: -2rem;
 
   @media (min-width: 575.98px) and (max-width: 991.98px) {
     right: 1.5rem;
