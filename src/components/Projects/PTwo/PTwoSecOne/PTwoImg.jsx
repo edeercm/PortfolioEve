@@ -3,6 +3,17 @@ import styled from 'styled-components';
 import pSecOneData from '../../PSecOneData';
 import { Number, Title, Subtitle } from '../../Sec1GlobalStls';
 
+const Img = styled.img`
+  width: 100%;
+  height: 80vh;
+  object-fit: contain;
+  object-position: center;
+
+  @media (max-width: 575.98px) {
+
+  }
+`;
+
 const NameCont = styled.div`
   position: absolute;
   right: -2rem;
@@ -22,17 +33,6 @@ const NameCont = styled.div`
   }
 `;
 
-const Img = styled.img`
-  width: 100%;
-  height: 80vh;
-  object-fit: contain;
-  object-position: center;
-
-  @media (max-width: 575.98px) {
-
-  }
-`;
-
 const PTwoImg = () => {
   const { projectTwo } = pSecOneData;
 
@@ -40,7 +40,7 @@ const PTwoImg = () => {
     <div className='position-relative'>
       {projectTwo.map((project, index) => (
         <React.Fragment key={index}>
-          <Img src={project.imgOne} alt='Render two' />
+          <Img src={project.imgOne} alt='Render three' />
           <NameCont>
             <Number>{project.number}</Number>
             <Title>{project.name}</Title>

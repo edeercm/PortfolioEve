@@ -1,7 +1,5 @@
 import React from 'react'
-import SecOne from './ProjTwoSecOne'
-
-import PTwoSecOne from '../ProjectTwo/PTwoSecOne/PTwoSecOne'
+import PTwoSecOne from './PTwoSecOne/PTwoSecOne'
 import SecTwo from './ProjTwoSecTwo'
 import SecThree from './ProjTwoSecThree'
 import SecFour from './ProjTwoSecFour'
@@ -15,8 +13,8 @@ const ProjectTwo = () => {
     <SecFour />
     <ProjectsNavigation
       projects={[
-        { path: '/ProjectOne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },
-        { path: '/ProjectTwo', name: 'Remodelación Comedor Studio YG' },
+        { path: '/POne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },
+        { path: '/PTwo', name: 'Remodelación Comedor Studio YG' },
         { path: '/ProjectThree', name: 'Luna y Mar Spa Interior Design' },
         { path: '/FurnitureProjects', name: 'Furniture - Personal Creations' }
       ]}

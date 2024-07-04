@@ -12,13 +12,13 @@ const projectsData = [
   },
   {
     image: project2,
-    link: '/ProjectTwo',
+    link: '/PTwo',
     title: 'REMODELACIÓN COMEDOR',
     subtitle: 'STUDIO YG',
   },
   {
     image: project3,
-    link: '/ProjectThree',
+    link: '/PThree',
     title: 'LUNA Y MAR SPA',
     subtitle: 'INTERIOR DESIGN',
   },
