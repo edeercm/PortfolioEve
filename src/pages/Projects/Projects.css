@@ -1,0 +1,145 @@
+.projs-seccion {
+    width: 100%;
+    height: 97.2vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: var(--principal-color);
+}
+
+.projs-title h3 {
+    margin-bottom: 2.5rem;
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+    letter-spacing: 0.75rem;
+}
+
+.project-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj-img-cont {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    perspective: 1000px;
+    cursor: pointer;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.proj-img-cont .image {
+    transition: transform 1s, filter 0.35s ease-in;
+    transform-style: preserve-3d;
+}
+
+.proj-img {
+    width: 100%;
+}
+
+.proj-img-cont:hover .image {
+    transform: rotateY(15deg) rotateX(5deg);
+    filter: brightness(75%);
+}
+
+.proj-img-cont .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.75s ease;
+    transform: translateY(100%);
+}
+
+.proj-img-cont:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.overlay-text {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.proj-img-cont:hover .overlay-text {
+    opacity: 1;
+}
+
+.project-desc-cont {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.proj-name {
+    color: #4B4B4B;
+    font-size: 0.925rem;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.proj-det {
+    color: #4B4B4B;
+    font-size: 0.825rem;
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+@media (min-width: 575.98px) and (max-width: 991.98px) {
+
+    .projs-seccion {
+        height: auto;
+        padding: 7rem;
+    }
+
+    .projs-title h3 {
+        margin: 2rem 0 5rem;
+        font-weight: bold;
+        font-size: 4.5rem;
+    }
+
+    .proj-img {
+        width: 95%;
+    }
+
+    .project-desc-cont {
+        margin-bottom: 3.25rem;
+    }
+
+    .proj-name {
+        font-size: 1.5rem;
+    }
+
+    .proj-det {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 575.97px) {
+
+    .projs-seccion {
+        height: auto;
+        padding: 7rem 0 3.5rem;
+    }
+
+    .projs-title h3 {
+        letter-spacing: 0.125rem;
+    }
+
+    .proj-img {
+        width: 100%;
+    }
+
+    .proj-det {
+        margin-bottom: 2.5rem;
+    }
+}

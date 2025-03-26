@@ -4,10 +4,16 @@ import POneSecTwo from './POneSecTwo'
 import POneSecThree from './POneSecThree'
 import POneSecFour from './POneSecFour'
 import ProjectsNavigation from '../ProjectsNavigation'
+import pSecOneData from '../PSecOneData'
+
+import PSecOne from '../PSecOne'
 
 const POne = () => {
+  const projectOne = pSecOneData.projects.find(project => project.id === 1);
+
   return <>
     <POneSecOne />
+    <PSecOne project={projectOne} />;
     <POneSecTwo />
     <POneSecThree />
     <POneSecFour />
@@ -24,3 +30,8 @@ const POne = () => {
 }
 
 export default POne
+
+
+
+
+

@@ -1,21 +1,18 @@
 import React from 'react'
-import { DescLabel, Desc, IconsCont, DesignedLabel, Icon } from '../../PSecOneStyles';
-import pOneTwoData from '../../POneTwoData';
+import { DescLabel, Desc, IconsCont, DesignedLabel, Icon } from './PSecOneStyles';
 
-const POneInfo = () => {
-  const { label, projectOne, designedLabel, autocadIcon, sketchupIcon, vrayIcon, photoshopIcon } = pOneTwoData;
-
+const PSecOneInfo = ({ label, designedLabel, projects, autocadIcon, sketchupIcon, vrayIcon, photoshopIcon }) => {
   return (
     <div className="row p-1 p-lg-5 gap-4 gap-lg-3">
       <div className="col-12">
         <DescLabel>{label}</DescLabel>
       </div>
       <div className="col-12 d-flex flex-column gap-3 gap-lg-2">
-        {projectOne.map((desc, index) => (
+        {projects.map((project, index) => (
           <React.Fragment key={index}>
-            <Desc>{desc.descOne}</Desc>
-            <Desc>{desc.descTwo}</Desc>
-            <Desc>{desc.descThree}</Desc>
+            <Desc>{project.descOne}</Desc>
+            <Desc>{project.descTwo}</Desc>
+            <Desc>{project.descThree}</Desc>
           </React.Fragment>
         ))}
       </div>
@@ -34,4 +31,4 @@ const POneInfo = () => {
   )
 }
 
-export default POneInfo
+export default PSecOneInfo

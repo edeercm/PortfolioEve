@@ -1,9 +1,9 @@
 import React from 'react'
 import { DescLabel, Desc, IconsCont, DesignedLabel, Icon } from '../../PSecOneStyles';
-import pSecOneData from '../../PSecOneData';
+import pOneTwoData from '../../POneTwoData';
 
 const PTwoInfo = () => {
-  const { label, projectTwo, designedLabel, autocadIcon, sketchupIcon, vrayIcon, photoshopIcon } = pSecOneData;
+  const { label, projectTwo, designedLabel, autocadIcon, sketchupIcon, vrayIcon, photoshopIcon } = pOneTwoData;
 
   return (
     <div className="row p-1 p-lg-5 gap-4 gap-lg-3">

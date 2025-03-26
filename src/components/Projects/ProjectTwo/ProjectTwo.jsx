@@ -1,27 +1,20 @@
 import React from 'react'
-import PTwoSecOne from './PTwoSecOne/PTwoSecOne'
+import SecOne from './ProjTwoSecOne'
 import SecTwo from './ProjTwoSecTwo'
 import SecThree from './ProjTwoSecThree'
 import SecFour from './ProjTwoSecFour'
 import ProjectsNavigation from '../ProjectsNavigation'
 
-import pSecOneData from '../PSecOneData'
-import PSecOne from '../PSecOne'
-
-
-const PTwo = () => {
-  const projectTwo = pSecOneData.projects.find(project => project.id === 2);
-
+const ProjectTwo = () => {
   return <>
-    <PTwoSecOne />
-    <PSecOne project={projectTwo} />;
+    <SecOne />
     <SecTwo />
     <SecThree />
     <SecFour />
     <ProjectsNavigation
       projects={[
-        { path: '/POne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },
-        { path: '/PTwo', name: 'Remodelación Comedor Studio YG' },
+        { path: '/ProjectOne', name: 'Centro Multifuncional y Memorial de Sitio: Comunitaria 28' },
+        { path: '/ProjectTwo', name: 'Remodelación Comedor Studio YG' },
         { path: '/ProjectThree', name: 'Luna y Mar Spa Interior Design' },
         { path: '/FurnitureProjects', name: 'Furniture - Personal Creations' }
       ]}
@@ -30,6 +23,4 @@ const PTwo = () => {
   </>
 }
 
-export default PTwo
-
-
+export default ProjectTwo

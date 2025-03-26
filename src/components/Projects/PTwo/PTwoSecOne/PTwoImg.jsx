@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import pSecOneData from '../../PSecOneData';
+import pOneTwoData from '../../POneTwoData';
 import { Number, Title, Subtitle } from '../../PSecOneStyles';
 
 const Img = styled.img`
@@ -34,7 +34,7 @@ const NameCont = styled.div`
 `;
 
 const PTwoImg = () => {
-  const { projectTwo } = pSecOneData;
+  const { projectTwo } = pOneTwoData;
 
   return (
     <div className='position-relative'>
